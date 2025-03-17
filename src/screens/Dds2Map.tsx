@@ -1,4 +1,3 @@
-'use server'
 import {lazy, Suspense} from "react";
 import Loading from "../components/Loading.tsx";
 
@@ -8,9 +7,9 @@ function Dds2Map() {
   const Map = lazy(() => import('../components/Dds2Leaflet.tsx'))
 
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: 'row', backgroundColor: '#000'}}>
       <Suspense fallback={<Loading/>}>
-        <Map />
+        <Map/>
       </Suspense>
     </div>
   );

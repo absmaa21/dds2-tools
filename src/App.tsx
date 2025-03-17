@@ -1,9 +1,10 @@
 import './App.css'
+import Dds2Map from "./screens/Dds2Map.tsx";
 
 function App() {
 
   return (
-    <h1>Hello.</h1>
+    <Dds2Map/>
   )
 }
 
