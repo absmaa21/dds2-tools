@@ -1,8 +1,18 @@
-import React from 'react';
+'use server'
+import {lazy, Suspense} from "react";
+import Loading from "../components/Loading.tsx";
+
 
 function Dds2Map() {
+
+  const Map = lazy(() => import('../components/Dds2Leaflet.tsx'))
+
   return (
-    <div></div>
+    <div>
+      <Suspense fallback={<Loading/>}>
+        <Map />
+      </Suspense>
+    </div>
   );
 }
 
