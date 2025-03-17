@@ -1,0 +1,86 @@
+import {Area, Item, Unit} from "./enums.ts";
+
+export interface Marker {
+  "name": string,
+  "area": Area,
+  "location": { x: number, y: number },
+}
+
+export interface Data {
+  "last-update": number,
+  "version": number,
+  "game-version": string,
+  "hideouts": Hideout[],
+  "shops": Shop[],
+  "equip-shops": Shop[],
+  "pawn-shops": Shop[],
+  "anchor-spots": Marker[],
+  "bosses": Boss[],
+  "cloth-shops": Shop[],
+  "restaurants": Shop[],
+  "dealer-spots": Marker[],
+  "medic-points": MedicPoint[],
+}
+
+export interface Shop extends Marker {
+  "check-possible": boolean,
+  "discounts": number[],
+  "items"?: IItem[],
+  "furnitures"?: Furniture[],
+  "equipments"?: Equipment[],
+}
+
+export interface IItem {
+  "name": string | Item,
+  "price": number,
+  "amount": number,
+  "unit": Unit,
+  "quantity": number[],
+}
+
+export interface Hideout extends Marker {
+  "price": number,
+  "visibility:": number,
+  "security": number,
+  "comfort": number,
+  "running-water"?: boolean,
+  "phoneline"?: boolean,
+  "garden"?: boolean,
+  "is_apartment"?: boolean,
+  "parking-spot"?: boolean,
+  "vault"?: boolean,
+}
+
+export interface Boss extends Marker {
+  "demands": DrugDemand[],
+  "xp-level"?: number[], // index eq. level
+}
+
+export interface MedicPoint extends Marker {
+  "price": number,
+}
+
+export interface DrugDemand {
+  "name": string,
+  "price-per-g": number,
+  "amount": number,
+}
+
+export interface Furniture extends IItem {
+  visibility?: number,
+  security?: number,
+  comfort?: number,
+  "blocks-grenades"?: boolean,
+  "substance-storage"?: number,
+  "hideout-stash"?: number,
+  slots?: number,
+  decoration?: boolean,
+}
+
+export interface Equipment extends Furniture {
+  tier: number,
+  "crafting-speed"?: number,
+  "waste-amount"?: number,
+  "production-cost"?: number,
+  "energy-usage"?: number,
+}
