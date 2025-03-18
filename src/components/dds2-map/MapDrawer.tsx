@@ -10,7 +10,7 @@ interface Props {
 function MapDrawer({width}: Props) {
 
   return (
-    <div className={"body"} style={{maxWidth: width, minWidth: width}}>
+    <div className={"body"} style={{minWidth: width}}>
       <Typography variant={'h5'} component={'h1'} fontWeight={800}>Interactive Map</Typography>
 
       <MapSearch/>

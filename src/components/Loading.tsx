@@ -1,14 +1,9 @@
 import "./Loading.css"
 
-
-interface Props {
-  width: number,
-}
-
-function Loading({width}: Props) {
+function Loading() {
   return (
     <div style={{
-      minHeight: window.innerHeight, width, display: 'flex', justifyContent: 'center',
+      height: '100vh', width: '100%', display: 'flex', justifyContent: 'center',
       alignItems: 'center'
     }}>
       <div className={"custom-loader"}/>

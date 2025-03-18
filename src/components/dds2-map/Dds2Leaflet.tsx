@@ -9,6 +9,7 @@ import DraggableMarker from "../DraggableMarker.tsx";
 import img from '../../assets/dds2-map.jpg'
 
 
+
 function MapEvents({onClick}: { onClick: () => void }) {
   useMapEvents({
     click: onClick,
@@ -17,11 +18,7 @@ function MapEvents({onClick}: { onClick: () => void }) {
 }
 
 
-interface Props {
-  allocatedWidth?: number,
-}
-
-function Dds2Leaflet({allocatedWidth}: Props) {
+function Dds2Leaflet() {
 
   const {data} = useData()
   const {visibleTypes, selectedItems, setChosenMarker} = useMapData()
@@ -47,9 +44,9 @@ function Dds2Leaflet({allocatedWidth}: Props) {
       zoom={12}
       minZoom={10}
       maxZoom={14}
-      style={{minHeight: window.innerHeight, minWidth: window.innerWidth - (allocatedWidth ?? 0)}}
+      style={{height: '100vh', width: '100%'}}
       maxBounds={mapBounds}
-      maxBoundsViscosity={0.2}
+      maxBoundsViscosity={0.01}
     >
       <MapEvents onClick={() => setChosenMarker(null)}/>
       <DraggableMarker/>

@@ -1,33 +1,28 @@
+import './Dds2Map.css'
 import {lazy, Suspense} from "react";
 import Loading from "../components/Loading.tsx";
 import MapDrawer from "../components/dds2-map/MapDrawer.tsx";
-import {Drawer, Grid2} from "@mui/material";
+import {Drawer} from "@mui/material";
 
 
 function Dds2Map() {
 
-  const mapDrawerWidth: number = 260
+  const mapDrawerWidth: number = 280
 
   const Map = lazy(() => import('../components/dds2-map/Dds2Leaflet.tsx'))
 
   return (
-    <Grid2 style={{display: "flex", flexDirection: 'row'}}>
-      <Grid2>
-        <Drawer>
+    <div className={'container'}>
+      <Drawer>
 
-        </Drawer>
-      </Grid2>
+      </Drawer>
 
-      <Grid2>
-        <Suspense fallback={<Loading width={mapDrawerWidth}/>}>
-          <Map allocatedWidth={mapDrawerWidth}/>
-        </Suspense>
-      </Grid2>
+      <Suspense fallback={<Loading/>}>
+        <Map/>
+      </Suspense>
 
-      <Grid2>
-        <MapDrawer width={mapDrawerWidth} />
-      </Grid2>
-    </Grid2>
+      <MapDrawer width={mapDrawerWidth}/>
+    </div>
   );
 }
 
