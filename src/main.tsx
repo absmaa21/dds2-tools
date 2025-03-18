@@ -4,11 +4,13 @@ import './index.css'
 import App from './App.tsx'
 import DataProvider from "./contexts/DataProvider.tsx";
 import MapDataProvider from "./contexts/MapDataProvider.tsx";
+import {CssBaseline} from "@mui/material";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <DataProvider>
       <MapDataProvider>
+        <CssBaseline/>
         <App />
       </MapDataProvider>
     </DataProvider>

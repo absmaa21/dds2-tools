@@ -20,9 +20,9 @@ function MapDataProvider({children}: Props) {
   }
 
   const [itemSearch, setItemSearch] = useState<string>('')
-  const [selectedItems, setSelectedItems] = useState<Item[]>([])
+  const [selectedItems, setSelectedItems] = useState<string[]>([])
 
-  function submitItem(item: Item) {
+  function submitItem(item: string) {
     if (selectedItems.includes(item)) return
     setSelectedItems(prev => [...prev, item])
   }

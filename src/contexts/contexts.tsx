@@ -1,7 +1,7 @@
 import {createContext} from "react";
 import {Data} from "../types/data.ts";
 import * as React from "react";
-import {Item, MarkerType} from "../types/enums.ts";
+import {MarkerType} from "../types/enums.ts";
 import {ChoosableMarkers} from "../types/map.ts";
 
 export interface DataContextProps {
@@ -16,12 +16,12 @@ export interface MapDataContextProps {
   visibleTypes: MarkerType[],
   toggleVisibleType: (type: MarkerType) => void,
 
-  getAvailableItems: () => Item[],
+  getAvailableItems: () => string[],
   itemSearch: string,
   setItemSearch: React.Dispatch<React.SetStateAction<string>>,
-  selectedItems: Item[],
-  submitItem: (item: Item) => void,
-  removeItem: (item: Item) => void,
+  selectedItems: string[],
+  submitItem: (item: string) => void,
+  removeItem: (item: string) => void,
 
   chosenMarker: ChoosableMarkers,
   setChosenMarker: React.Dispatch<React.SetStateAction<ChoosableMarkers>>,

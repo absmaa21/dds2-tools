@@ -1,12 +1,12 @@
 import L from "leaflet";
-import useMapData from "../hooks/useMapData.ts";
-import {IItem, Shop} from "../types/data.ts";
-import {Item, MarkerType} from "../types/enums.ts";
+import useMapData from "../../hooks/useMapData.ts";
+import {IItem, Shop} from "../../types/data.ts";
+import {Item, MarkerType} from "../../types/enums.ts";
 import {ImageOverlay, MapContainer, Marker, Popup, useMapEvents} from "react-leaflet";
-import useData from "../hooks/useData.ts";
+import useData from "../../hooks/useData.ts";
 import {clothIcon, furnitureIcon, pawnshopIcon, restaurantIcon, shopIcon} from "./MarkerIcons.ts";
-import DraggableMarker from "./DraggableMarker.tsx";
-import img from '../assets/dds2-map.jpg'
+import DraggableMarker from "../DraggableMarker.tsx";
+import img from '../../assets/dds2-map.jpg'
 
 
 function MapEvents({onClick}: { onClick: () => void }) {
@@ -47,7 +47,7 @@ function Dds2Leaflet({allocatedWidth}: Props) {
       zoom={12}
       minZoom={10}
       maxZoom={14}
-      style={{height: window.innerHeight, width: window.innerWidth - (allocatedWidth ?? 0)}}
+      style={{minHeight: window.innerHeight, minWidth: window.innerWidth - (allocatedWidth ?? 0)}}
       maxBounds={mapBounds}
       maxBoundsViscosity={0.2}
     >

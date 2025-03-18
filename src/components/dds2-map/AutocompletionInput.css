@@ -1,0 +1,37 @@
+.input-container {
+    display: flex;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 2;
+    border-width: 0;
+    border-radius: 8px;
+    padding-inline: 8px;
+    background-color: #333;
+}
+
+.suggestion-container {
+    position: absolute;
+    margin-top: 38px;
+    border: 2px solid #aaa;
+    overflow-y: auto;
+    z-index: 199;
+    user-select: none;
+    background-color: #222;
+    max-height: 160px;
+    scrollbar-width: thin;
+}
+
+.suggestion {
+    cursor: pointer;
+    padding: 4px;
+    user-select: none;
+    background-color: #fff3;
+}
+
+.active {
+    background-color: #fff5;
+}
