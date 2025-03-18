@@ -132,6 +132,7 @@ export enum Item {
     COCS = "Cocaine",
     BLANK_BLOTTER = "Blank blotter",
     FESTIVE_SPICE_PACK = "Festive spice pack",
+    SHROOMS = "Shrooms",
 }
 
 export enum Unit {

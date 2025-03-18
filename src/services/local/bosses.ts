@@ -57,15 +57,16 @@ export const bosses: Boss[] = [
     "name": "Diego Herrera",
     "area": Area.JUNGLE,
     "location": {x: 0.595483, y: 0.650768},
+    "xp-level": [0, 400],
     "demands": [
       {
         "name": Item.WEED_INDICA,
-        "amount": 50,
+        "amount": 100,
         "price-per-g": 2000,
       },
       {
         "name": Item.AMP,
-        "amount": 75,
+        "amount": 135,
         "price-per-g": 2000,
       },
       {
@@ -77,6 +78,16 @@ export const bosses: Boss[] = [
         "name": Item.OPIUM,
         "amount": 50,
         "price-per-g": 2200,
+      },
+      {
+        "name": Item.SHROOMS,
+        "amount": -1,
+        "price-per-g": 2500,
+      },
+      {
+        "name": Item.COCS,
+        "amount": -1,
+        "price-per-g": 6000,
       },
     ],
   },
