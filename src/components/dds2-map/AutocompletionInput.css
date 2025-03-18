@@ -15,12 +15,13 @@
 
 .suggestion-container {
     position: absolute;
-    margin-top: 38px;
-    border: 2px solid #aaa;
+    margin-top: 42px;
+    border: 2px solid #fff2;
+    border-radius: 8px;
     overflow-y: auto;
     z-index: 199;
     user-select: none;
-    background-color: #222;
+    background-color: #242424;
     max-height: 160px;
     scrollbar-width: thin;
 }
@@ -29,9 +30,9 @@
     cursor: pointer;
     padding: 4px;
     user-select: none;
-    background-color: #fff3;
+    background-color: #fff1;
 }
 
-.active {
-    background-color: #fff5;
+.suggestion-active {
+    background-color: #fff2;
 }

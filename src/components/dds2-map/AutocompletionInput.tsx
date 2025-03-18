@@ -23,7 +23,7 @@ function AutocompletionInput() {
     }
   }, [input, MapData]);
 
-  function handleSuggestionClick(suggestion: string) {
+  function submitSuggestion(suggestion: string) {
     if (MapData.getAvailableItems().find(i => i === suggestion))
       MapData.submitItem(suggestion)
 
@@ -39,27 +39,39 @@ function AutocompletionInput() {
 
     if (suggestionRefs.current[newIndex]) {
       suggestionRefs.current[newIndex]!.scrollIntoView({
-        behavior: 'auto',
+        behavior: 'smooth',
         block: 'center',
       });
     }
   }
 
   function handleKeyPress(e: React.KeyboardEvent<HTMLDivElement>) {
-    if (e.key === "Enter") {
-      handleSuggestionClick(suggestions[chosenIndex]);
-      return;
+    let preventDefault: boolean = true
+    switch (e.key) {
+      case "Enter": {
+        submitSuggestion(suggestions[chosenIndex])
+        break
+      }
+      case "Tab": {
+        handleIndexChange(chosenIndex + (e.shiftKey ? -1 : 1))
+        break
+      }
+      case "ArrowUp": {
+        handleIndexChange(chosenIndex - 1)
+        break
+      }
+      case "ArrowDown": {
+        handleIndexChange(chosenIndex + 1)
+        break
+      }
+      default: {
+        if (!e.shiftKey)
+          handleIndexChange(0)
+        preventDefault = false
+      }
     }
-    if (e.key === "Tab" || e.key === "ArrowDown") {
-      e.preventDefault();
-      handleIndexChange(chosenIndex + 1);
-      return;
-    }
-    if (e.key === "ArrowUp") {
-      handleIndexChange(chosenIndex - 1);
-      return;
-    }
-    handleIndexChange(0);
+
+    if (preventDefault) e.preventDefault()
   }
 
   return (
@@ -67,7 +79,7 @@ function AutocompletionInput() {
 
       <input
         title={'Search Item'} type={'search'} value={input} ref={inputRef}
-        onChange={e => setInput(e.target.value)} className={'input'}
+        onChange={e => setInput(e.target.value)} className={'input'} onKeyDown={handleKeyPress}
       />
 
       {suggestions.length > 0 && (
@@ -76,8 +88,8 @@ function AutocompletionInput() {
             <div
               key={index}
               ref={el => {suggestionRefs.current[index] = el}}
-              className={index === chosenIndex ? "suggestion active" : "suggestion"}
-              onClick={() => handleSuggestionClick(suggestion)}
+              className={index === chosenIndex ? "suggestion suggestion-active" : "suggestion"}
+              onClick={() => submitSuggestion(suggestion)}
             >
               {suggestion}
             </div>
