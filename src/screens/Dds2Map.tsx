@@ -1,7 +1,7 @@
 import {lazy, Suspense} from "react";
 import Loading from "../components/Loading.tsx";
 import MapDrawer from "../components/dds2-map/MapDrawer.tsx";
-import {Drawer} from "@mui/material";
+import {Drawer, Grid2} from "@mui/material";
 
 
 function Dds2Map() {
@@ -11,18 +11,23 @@ function Dds2Map() {
   const Map = lazy(() => import('../components/dds2-map/Dds2Leaflet.tsx'))
 
   return (
-    <div style={{display: "flex", flexDirection: 'row'}}>
+    <Grid2 style={{display: "flex", flexDirection: 'row'}}>
+      <Grid2>
+        <Drawer>
 
-      <Drawer>
+        </Drawer>
+      </Grid2>
 
-      </Drawer>
+      <Grid2>
+        <Suspense fallback={<Loading width={mapDrawerWidth}/>}>
+          <Map allocatedWidth={mapDrawerWidth}/>
+        </Suspense>
+      </Grid2>
 
-      <Suspense fallback={<Loading/>}>
-        <Map allocatedWidth={mapDrawerWidth} />
-      </Suspense>
-
-      <MapDrawer width={mapDrawerWidth} />
-    </div>
+      <Grid2>
+        <MapDrawer width={mapDrawerWidth} />
+      </Grid2>
+    </Grid2>
   );
 }
 
