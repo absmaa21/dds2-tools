@@ -7,7 +7,7 @@ function Dds2Map() {
   const Map = lazy(() => import('../components/Dds2Leaflet.tsx'))
 
   return (
-    <div style={{display: "flex", flexDirection: 'row', backgroundColor: '#000'}}>
+    <div style={{display: "flex", flexDirection: 'row'}}>
       <Suspense fallback={<Loading/>}>
         <Map/>
       </Suspense>

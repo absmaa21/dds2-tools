@@ -6,6 +6,7 @@ import {ImageOverlay, MapContainer, Marker, Popup, useMapEvents} from "react-lea
 import useData from "../hooks/useData.ts";
 import {clothIcon, furnitureIcon, pawnshopIcon, restaurantIcon, shopIcon} from "./MarkerIcons.ts";
 import DraggableMarker from "./DraggableMarker.tsx";
+import img from '../assets/dds2-map.jpg'
 
 
 function MapEvents({onClick}: { onClick: () => void }) {
@@ -16,7 +17,11 @@ function MapEvents({onClick}: { onClick: () => void }) {
 }
 
 
-function Dds2Leaflet() {
+interface Props {
+  allocatedWidth?: number,
+}
+
+function Dds2Leaflet({allocatedWidth}: Props) {
 
   const {data} = useData()
   const {visibleTypes, selectedItems, setChosenMarker} = useMapData()
@@ -39,18 +44,18 @@ function Dds2Leaflet() {
   return (
     <MapContainer
       center={mapBounds.getCenter()}
-      zoom={11}
-      minZoom={9}
-      maxZoom={13}
-      style={{height: 700, width: 500}}
-      maxBounds={L.latLngBounds(mapBounds.getSouthWest(), [mapBounds.getNorth(), mapBounds.getEast() + 0.2])}
+      zoom={12}
+      minZoom={10}
+      maxZoom={14}
+      style={{height: window.innerHeight, width: window.innerWidth - (allocatedWidth ?? 0)}}
+      maxBounds={mapBounds}
       maxBoundsViscosity={0.2}
     >
       <MapEvents onClick={() => setChosenMarker(null)}/>
       <DraggableMarker/>
 
       <ImageOverlay
-        url='https://images2.imgbox.com/36/55/ESV6ctZc_o.jpg'
+        url={img}
         bounds={mapBounds}
       />
 
