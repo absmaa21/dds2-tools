@@ -5,10 +5,8 @@ export enum MarkerType {
     EQUIP_SHOP = 'Equipment Shop',
     CLOTH_SHOP = "Cloth Shop",
     RESTAURANT = 'Restaurant',
-    DEAD_DROP = 'Dead Drop',
     DEALER_SPOT = 'Dealer Spot',
     BOAT_DOCK = 'Boat Dock',
-    ZONES = 'Zones',
     MEDIC_POINT = 'Medic Point',
     BOSS = "Boss",
 }

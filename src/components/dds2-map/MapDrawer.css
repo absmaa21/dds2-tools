@@ -4,3 +4,44 @@
     padding: 8px;
     background-color: #242424;
 }
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #444;
+    opacity: 0.33;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    user-select: none;
+    transition: 0.3s, transform 0.3s;
+}
+
+.button-selected {
+    opacity: 1;
+}
+
+.badge {
+    position: absolute;
+    aspect-ratio: 1;
+    width: 20px;
+    transform: translateY(6px);
+    right: 8px;
+    font-size: 12px;
+    padding: 4px;
+    color: #ccc;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #222;
+}

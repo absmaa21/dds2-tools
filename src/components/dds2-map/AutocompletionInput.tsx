@@ -46,6 +46,8 @@ function AutocompletionInput() {
   }
 
   function handleKeyPress(e: React.KeyboardEvent<HTMLDivElement>) {
+    if (suggestions.length <= 0) return
+
     let preventDefault: boolean = true
     switch (e.key) {
       case "Enter": {

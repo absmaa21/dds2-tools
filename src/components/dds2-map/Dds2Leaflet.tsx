@@ -4,10 +4,17 @@ import {IItem, Shop} from "../../types/data.ts";
 import {Item, MarkerType} from "../../types/enums.ts";
 import {ImageOverlay, MapContainer, Marker, Popup, useMapEvents} from "react-leaflet";
 import useData from "../../hooks/useData.ts";
-import {clothIcon, furnitureIcon, pawnshopIcon, restaurantIcon, shopIcon} from "./MarkerIcons.ts";
+import {
+  anchorIcon,
+  clothIcon,
+  furnitureIcon,
+  heartIcon, hideoutIcon, medicIcon,
+  pawnshopIcon,
+  restaurantIcon,
+  shopIcon
+} from "./MarkerIcons.ts";
 import DraggableMarker from "../DraggableMarker.tsx";
 import img from '../../assets/dds2-map.jpg'
-
 
 
 function MapEvents({onClick}: { onClick: () => void }) {
@@ -30,7 +37,7 @@ function Dds2Leaflet() {
   }
 
   function showMarkerType(type: MarkerType) {
-    return visibleTypes.includes(type) || selectedItems.length > 0
+    return visibleTypes.includes(type)
   }
 
   function showShopMarker(shop: Shop) {
@@ -99,6 +106,42 @@ function Dds2Leaflet() {
               eventHandlers={{click: () => setChosenMarker(m)}}>
               <Popup>{m.name}</Popup>
           </Marker>)
+      }
+
+      {showMarkerType(MarkerType.BOSS) && data.bosses.map((m, i) =>
+        <Marker
+          key={i} icon={heartIcon}
+          position={L.latLng(m.location.x, m.location.y)}
+          eventHandlers={{click: () => setChosenMarker(m)}}>
+          <Popup>{m.name}</Popup>
+        </Marker>)
+      }
+
+      {showMarkerType(MarkerType.BOAT_DOCK) && data["anchor-spots"].map((m, i) =>
+          <Marker
+              key={i} icon={anchorIcon}
+              position={L.latLng(m.location.x, m.location.y)}
+              eventHandlers={{click: () => setChosenMarker(null)}}>
+              <Popup>{m.name}</Popup>
+          </Marker>)
+      }
+
+      {showMarkerType(MarkerType.HIDEOUT) && data.hideouts.map((m, i) =>
+        <Marker
+          key={i} icon={hideoutIcon}
+          position={L.latLng(m.location.x, m.location.y)}
+          eventHandlers={{click: () => setChosenMarker(m)}}>
+          <Popup>{m.name}</Popup>
+        </Marker>)
+      }
+
+      {showMarkerType(MarkerType.MEDIC_POINT) && data["medic-points"].map((m, i) =>
+        <Marker
+          key={i} icon={medicIcon}
+          position={L.latLng(m.location.x, m.location.y)}
+          eventHandlers={{click: () => setChosenMarker(m)}}>
+          <Popup>{m.name}</Popup>
+        </Marker>)
       }
 
     </MapContainer>
