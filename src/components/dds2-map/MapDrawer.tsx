@@ -29,7 +29,7 @@ function MapDrawer({width}: Props) {
         {Object.values(MarkerType).map(m => (
           <button
             className={MapData.visibleTypes.includes(m) ? "button-selected" : ""}
-            onClick={() => MapData.toggleVisibleType(m)}
+            onClick={() => MapData.toggleVisibleType(m)} key={m}
           >
             {m}
             <span className={'badge'}>{(data[getMarkerDataStr(m)] as Array<never>).length}</span>
