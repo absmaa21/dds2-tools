@@ -1,9 +1,9 @@
-import {Data, Equipment, Furniture} from "../types/data.ts";
+import {Data, Equipment, Furniture, ShopItem} from "../types/data.ts";
 import {Item, MarkerType} from "../types/enums.ts";
 import {equipments} from "./local/equipments.ts";
 import {furnitures} from "./local/furnitures.ts";
 
-export function getAvailableLevel(item: IItem) {
+export function getAvailableLevel(item: ShopItem) {
     let lvl = 0;
     for (let i = 0; i < item.quantity.length; i++) {
         lvl = i
