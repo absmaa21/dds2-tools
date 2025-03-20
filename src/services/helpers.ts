@@ -1,5 +1,7 @@
-import {Data, IItem} from "../types/data.ts";
-import {MarkerType} from "../types/enums.ts";
+import {Data, Equipment, Furniture, IItem} from "../types/data.ts";
+import {Item, MarkerType} from "../types/enums.ts";
+import {equipments} from "./local/equipments.ts";
+import {furnitures} from "./local/furnitures.ts";
 
 export function getAvailableLevel(item: IItem) {
     let lvl = 0;
@@ -24,4 +26,10 @@ export function getMarkerDataStr(marker: MarkerType): keyof Data{
         case MarkerType.MEDIC_POINT: return 'medic-points'
         case MarkerType.BOSS: return 'bosses'
     }
+}
+
+
+export function getStatsOfItem(item: Item): Equipment | Furniture | undefined {
+    if (equipments[item]) return equipments[item]
+    else if (furnitures[item]) return furnitures[item]
 }

@@ -2,7 +2,7 @@ import {Equipment} from "../../types/data.ts";
 import {Item} from "../../types/enums.ts";
 
 
-const equipments: Record<Item, Equipment> = {
+export const equipments: Record<Item, Equipment> = {
   [Item.LABORATORY_TRAY]: {
     "tier": 1,
     "hideout-stash": 1,

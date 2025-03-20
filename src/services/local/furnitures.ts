@@ -1,7 +1,7 @@
 import {Item} from "../../types/enums.ts";
 import {Furniture} from "../../types/data.ts";
 
-const furnitures: Record<Item, Furniture> = {
+export const furnitures: Record<Item, Furniture> = {
   [Item.SMALL_CONTAINER]: {
     "substance-storage": 750,
   },
