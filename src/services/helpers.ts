@@ -1,4 +1,4 @@
-import {Data, Equipment, Furniture, IItem} from "../types/data.ts";
+import {Data, Equipment, Furniture} from "../types/data.ts";
 import {Item, MarkerType} from "../types/enums.ts";
 import {equipments} from "./local/equipments.ts";
 import {furnitures} from "./local/furnitures.ts";
@@ -30,6 +30,6 @@ export function getMarkerDataStr(marker: MarkerType): keyof Data{
 
 
 export function getStatsOfItem(item: Item): Equipment | Furniture | undefined {
-    if (equipments[item]) return equipments[item]
-    else if (furnitures[item]) return furnitures[item]
+    if (equipments.has(item)) return equipments.get(item)
+    else if (furnitures.has(item)) return furnitures.get(item)
 }
