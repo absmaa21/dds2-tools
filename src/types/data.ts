@@ -25,18 +25,20 @@ export interface Data {
 export interface Shop extends Marker {
   "check-possible": boolean,
   "discounts": number[],
-  "items"?: IItem[],
-  "furnitures"?: Furniture[],
-  "equipments"?: Equipment[],
+  "items"?: ShopItem[],
+  "furnitures"?: ShopItem[],
+  "equipments"?: ShopItem[],
 }
 
-export interface IItem {
-  "name": string | Item,
+export type ShopItem = {
+  "name": Item,
   "price": number,
-  "amount": number,
-  "unit": Unit,
   "quantity": number[],
-}
+} & (
+  // Unit und Amount müssen co. existieren
+  | { unit?: never; amount?: never }
+  | { unit: Unit; amount: number }
+  )
 
 export interface Hideout extends Marker {
   "price": number,
@@ -66,7 +68,7 @@ export interface DrugDemand {
   "amount": number,
 }
 
-export interface Furniture extends IItem {
+export interface Furniture {
   visibility?: number,
   security?: number,
   comfort?: number,
