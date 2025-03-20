@@ -131,6 +131,9 @@ export enum Item {
     BLANK_BLOTTER = "Blank blotter",
     FESTIVE_SPICE_PACK = "Festive spice pack",
     SHROOMS = "Shrooms",
+    LED_BULB_LARGE = "Led bulb large",
+    DISARMING_CARD = "Disarming card",
+    COMBAT_RATION = "Combat ration",
 
     // Furniture
     SMALL_CONTAINER = "Small Container",

@@ -23,43 +23,31 @@ export const shops: Shop[] = [
       {
         "name": Item.SAUSAGE,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10]
       },
       {
         "name": Item.BEER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10]
       },
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2]
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [15, 15]
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 300]
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 5],
       }
     ]
@@ -74,15 +62,11 @@ export const shops: Shop[] = [
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50, 100, 150],
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [30, 50, 80],
       },
       {
@@ -130,8 +114,6 @@ export const shops: Shop[] = [
       {
         "name": Item.BLANK_BLOTTER,
         "price": 425,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 0, 200],
       },
     ]
@@ -164,57 +146,41 @@ export const shops: Shop[] = [
       {
         "name": Item.SAUSAGE,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20, 30]
       },
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2]
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [25]
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500]
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1]
       },
       {
         "name": Item.BACKPACK_SMALL,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1]
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1]
       },
       {
@@ -227,8 +193,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1]
       },
       {
@@ -248,36 +212,26 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3]
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20]
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100]
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80]
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000]
       }
     ]
@@ -292,8 +246,6 @@ export const shops: Shop[] = [
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 200, 300, 400]
       },
       {
@@ -306,15 +258,11 @@ export const shops: Shop[] = [
       {
         "name": Item.ROLLING_PAPERS,
         "price": 8,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [40, 60, 80, 100]
       },
       {
         "name": Item.SEED_INDICA,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 7, 12, 15]
       },
       {
@@ -327,57 +275,41 @@ export const shops: Shop[] = [
       {
         "name": Item.UV_BULB_LARGE,
         "price": 9400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3, 3]
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 2, 3]
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 2, 3]
       },
       {
         "name": Item.EMPTY_GLASS_PIPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 20, 30, 40]
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 20, 30, 40]
       },
       {
         "name": Item.LED_BULB_SMALL,
         "price": 3700,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 1, 3]
       },
       {
         "name": Item.FAN,
         "price": 2250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3, 5]
       },
       {
         "name": Item.BLANK_BLOTTER,
         "price": 400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 0, 0, 10]
       },
     ]
@@ -392,22 +324,16 @@ export const shops: Shop[] = [
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 2,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
@@ -427,29 +353,21 @@ export const shops: Shop[] = [
       {
         "name": Item.METAL_PARTS,
         "price": 950,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8],
       },
       {
         "name": Item.SIMPLE_MOTORBOAT,
         "price": 129000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.RIB_MOTORBOAT,
         "price": 165000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
     ]
@@ -464,22 +382,16 @@ export const shops: Shop[] = [
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2],
       },
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2],
       },
       {
@@ -499,15 +411,11 @@ export const shops: Shop[] = [
       {
         "name": Item.METAL_PARTS,
         "price": 950,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8, 12],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8, 12],
       },
     ]
@@ -530,57 +438,41 @@ export const shops: Shop[] = [
       {
         "name": Item.BEER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 15, 20],
       },
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8, 12, 18],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50, 50, 50],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500, 1000, 1500],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 10, 10],
       },
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10, 15],
       },
       {
         "name": Item.BACKPACK_SMALL,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 5, 7],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
@@ -593,8 +485,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
@@ -614,50 +504,36 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 4, 5],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [40, 60, 80],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 500, 1000],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80, 450, 950],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000, 200000, 300000],
       },
       {
         "name": Item.EMPTY_GLASS_PIPE,
         "price": 4,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 20, 30],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50, 100, 150],
       },
       {
@@ -740,43 +616,31 @@ export const shops: Shop[] = [
       {
         "name": Item.COOKING_POT,
         "price": 2500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 4, 5],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 1, 2],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 3500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.MAP,
         "price": 2300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 5, 7],
       },
       {
         "name": Item.MOBILE_PHONE,
         "price": 19000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 2],
       },
     ]
@@ -791,15 +655,11 @@ export const shops: Shop[] = [
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
@@ -819,29 +679,21 @@ export const shops: Shop[] = [
       {
         "name": Item.METAL_PARTS,
         "price": 900,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.MAP,
         "price": 2500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
     ]
@@ -856,267 +708,191 @@ export const shops: Shop[] = [
       {
         "name": Item.GLASSES,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 5],
       },
       {
         "name": Item.BEANIE,
         "price": 400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
         "name": Item.BASEBALL_CAP,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 4, 5],
       },
       {
         "name": Item.TSHIRT,
         "price": 450,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 5],
       },
       {
         "name": Item.PANTS,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 5],
       },
       {
         "name": Item.SPORT_PANTS,
         "price": 1700,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 1, 2],
       },
       {
         "name": Item.SWEATSHIRT,
         "price": 1850,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 1, 2],
       },
       {
         "name": Item.SNEAKERS,
         "price": 2250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 2],
       },
       {
         "name": Item.FANNYPACK,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.BALACLAVA,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 2],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [25, 25, 25],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500, 1000, 1500],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 5, 5],
       },
       {
         "name": Item.BACKPACK_SMALL,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 3],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 500, 1000],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80, 450, 950],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000, 200000, 300000],
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 100, 150],
       },
       {
         "name": Item.METAL_PARTS,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8, 12, 18],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [8, 12, 18],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 4000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.MAP,
         "price": 2300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 1, 2],
       },
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 4],
       },
       {
         "name": Item.MOBILE_PHONE,
         "price": 19000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 2],
       },
       {
         "name": Item.FIRECRACKER,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 5, 9],
       },
       {
         "name": Item.BACKPACK_MEDIUM,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 2],
       },
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 4, 5],
       },
       {
         "name": Item.FLASHLIGHT_HID,
         "price": 5400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 2],
       },
       {
         "name": Item.HAMMER,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3],
       },
       {
         "name": Item.CROWBAR,
         "price": 11000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3],
       },
       {
         "name": Item.SHOVEL,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3],
       },
       {
         "name": Item.BOLT_CUTTER,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 2],
       },
       {
         "name": Item.KNIFE,
         "price": 15000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 1, 2],
       },
       {
         "name": Item.UV_BULB_LARGE,
         "price": 6400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3],
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 2, 3],
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 3, 4],
       },
     ]
@@ -1145,8 +921,6 @@ export const shops: Shop[] = [
       {
         "name": Item.BEER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [6, 10, 15],
       },
       {
@@ -1173,8 +947,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [4, 6, 8],
       },
       {
@@ -1208,22 +980,16 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.COOKING_POT,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 5, 8],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
@@ -1236,71 +1002,51 @@ export const shops: Shop[] = [
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.MAP,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 100, 100],
       },
       {
         "name": Item.BLANK_BLOTTER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 10, 30],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [140, 160, 180],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1000, 3000, 5000],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 500, 1000],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80, 450, 950],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 5, 5],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000, 200000, 300000],
       },
       {
@@ -1323,22 +1069,16 @@ export const shops: Shop[] = [
       {
         "name": Item.UV_BULB_LARGE,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
@@ -1365,22 +1105,16 @@ export const shops: Shop[] = [
       {
         "name": Item.ERGOT_RYE,
         "price": 1600,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
       {
         "name": Item.SHOVEL,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.PITCHFORK,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
     ]
@@ -1395,8 +1129,6 @@ export const shops: Shop[] = [
       {
         "name": Item.POPPY_HEAD_YOUNG,
         "price": 550,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 200, 300],
       },
       {
@@ -1430,36 +1162,26 @@ export const shops: Shop[] = [
       {
         "name": Item.UV_BULB_LARGE,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 8, 10],
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10, 15],
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.SHOVEL,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.PITCHFORK,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
     ]
@@ -1475,113 +1197,81 @@ export const shops: Shop[] = [
       {
         "name": Item.COOKING_POT,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.HAMMER,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CROWBAR,
         "price": 11000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.WRENCH,
         "price": 14000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.SHOVEL,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.MULTITOOL,
         "price": 5300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.BOLT_CUTTER,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.KNIFE,
         "price": 15000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 4000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FLASHLIGHT_HID,
         "price": 5400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.FIELD_BOOTS,
         "price": 8900,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FANNYPACK,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.BACKPACK_MEDIUM,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
@@ -1615,134 +1305,96 @@ export const shops: Shop[] = [
       {
         "name": Item.LED_BULB_SMALL,
         "price": 1650,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [4],
       },
       {
-        "name": "Led bulb large",
+        "name": Item.LED_BULB_LARGE,
         "price": 3900,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.UV_BULB_LARGE,
         "price": 9400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [4],
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.FAN,
         "price": 2250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
-        "name": "Disarming card",
+        "name": Item.DISARMING_CARD,
         "price": 35000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.FIRECRACKER,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.METAL_PARTS,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
-        "name": "Combat ration",
+        "name": Item.COMBAT_RATION,
         "price": 13000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [25],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000],
       },
     ],
@@ -1814,22 +1466,16 @@ export const shops: Shop[] = [
       }, {
         "name": Item.BLANK_BLOTTER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
     ]
@@ -1858,8 +1504,6 @@ export const shops: Shop[] = [
       {
         "name": Item.BEER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [6],
       },
       {
@@ -1907,22 +1551,16 @@ export const shops: Shop[] = [
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.ANTIVENOM,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
@@ -1963,78 +1601,56 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.MAP,
         "price": 2300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [25],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000],
       },
     ]
@@ -2049,8 +1665,6 @@ export const shops: Shop[] = [
       {
         "name": Item.MAP,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
     ]
@@ -2066,15 +1680,11 @@ export const shops: Shop[] = [
       {
         "name": Item.METAL_PARTS,
         "price": 950,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [15],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 1000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [15],
       },
       {
@@ -2094,36 +1704,26 @@ export const shops: Shop[] = [
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CAR,
         "price": 300000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
     ]
@@ -2152,8 +1752,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [6],
       },
       {
@@ -2166,8 +1764,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
@@ -2229,106 +1825,76 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 4000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.GLASSES,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.BASEBALL_CAP,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.MAP,
         "price": 2300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [25],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [40],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [500],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000],
       },
     ]
@@ -2392,43 +1958,31 @@ export const shops: Shop[] = [
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1000],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 3,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
     ]
@@ -2443,29 +1997,21 @@ export const shops: Shop[] = [
       {
         "name": Item.POPPY_HEAD_YOUNG,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [6],
       },
       {
         "name": Item.MORNING_GLORY,
         "price": 800,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.ERGOT_RYE,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
         "name": Item.YEW_TREE_BRANCH,
         "price": 1300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
     ]
@@ -2494,57 +2040,41 @@ export const shops: Shop[] = [
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.METAL_PARTS,
         "price": 900,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20],
       },
       {
         "name": Item.ELECTRIC_WIRES,
         "price": 900,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20],
       },
       {
         "name": Item.MAP,
         "price": 2500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.YACHT_SMALL,
         "price": 470000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.MOTORBOAT,
         "price": 315000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
     ]
@@ -2559,8 +2089,6 @@ export const shops: Shop[] = [
       {
         "name": Item.SEED_SATIVA,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5],
       },
       {
@@ -2573,64 +2101,46 @@ export const shops: Shop[] = [
       {
         "name": Item.LED_BULB_SMALL,
         "price": 3700,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.UV_BULB_LARGE,
         "price": 9400,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.HYDROPONIC_ELEMENTS,
         "price": 9000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2],
       },
       {
         "name": Item.FLOWER_POT,
         "price": 2000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3],
       },
       {
         "name": Item.FAN,
         "price": 2250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1],
       },
       {
         "name": Item.EMPTY_GLASS_PIPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
         "name": Item.VIAL,
         "price": 2,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 4,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [40],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
     ]
@@ -2660,15 +2170,11 @@ export const shops: Shop[] = [
       {
         "name": Item.BEER,
         "price": 500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 15, 20],
       },
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10, 15],
       },
       {
@@ -2751,8 +2257,6 @@ export const shops: Shop[] = [
       {
         "name": Item.CIGARETTE_PACK,
         "price": 3750,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 15, 20],
       },
       {
@@ -2786,148 +2290,106 @@ export const shops: Shop[] = [
       {
         "name": Item.KEYCHAIN,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 4, 5],
       },
       {
         "name": Item.COOKING_POT,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 4],
       },
       {
         "name": Item.FLASHLIGHT_SMALL,
         "price": 3000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
         "name": Item.FLASHLIGHT,
         "price": 4000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 3],
       },
       {
         "name": Item.CROWBAR,
         "price": 6000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.WIRE_CUTTERS,
         "price": 4500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 2, 3],
       },
       {
         "name": Item.MOBILE_PHONE,
         "price": 19000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 4],
       },
       {
         "name": Item.MAP,
         "price": 2300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 6],
       },
       {
         "name": Item.GLASSES,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 5],
       },
       {
         "name": Item.BASEBALL_CAP,
         "price": 300,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 4, 5],
       },
       {
         "name": Item.TSHIRT,
         "price": 450,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [2, 3, 5],
       },
       {
         "name": Item.PANTS,
         "price": 1500,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1, 2, 5],
       },
       {
         "name": Item.BACKPACK_SMALL,
         "price": 1800,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 5, 7],
       },
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 10, 15],
       },
       {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 150, 200],
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [1000, 1500, 2000],
       },
       {
         "name": Item.DUCT_TAPE,
         "price": 5,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 500, 1000],
       },
       {
         "name": Item.STRETCH_FOIL,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [80, 450, 950],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [20, 20, 20],
       },
       {
         "name": Item.BUS_TICKET,
         "price": 20,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100, 100, 100],
       },
       {
         "name": Item.CASH_LARGE,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [100000, 200000, 300000],
       },
     ]
@@ -2942,22 +2404,16 @@ export const shops: Shop[] = [
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 30],
       },
       {
         "name": Item.FIRST_AID_KIT,
         "price": 18000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [3, 8],
       },
       {
         "name": Item.ANTIVENOM,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 20],
       },
       {
@@ -2977,8 +2433,6 @@ export const shops: Shop[] = [
       {
         "name": Item.MEDICARE_PACKAGE,
         "price": 24000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10, 25],
       },
       {
@@ -3047,22 +2501,16 @@ export const shops: Shop[] = [
       {
         "name": Item.EMPTY_LABELED_MEDICAL_VIAL,
         "price": 6,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 50],
       },
       {
         "name": Item.EMPTY_LABELED_MEDICAL_BOX,
         "price": 10,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [0, 15],
       },
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [5, 5],
       },
     ]
@@ -3085,8 +2533,6 @@ export const shops: Shop[] = [
       {
         "name": Item.ERGOT_RYE,
         "price": 1100,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
@@ -3099,8 +2545,6 @@ export const shops: Shop[] = [
       {
         "name": Item.POPPY_HEAD_YOUNG,
         "price": 550,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [10],
       },
       {
@@ -3113,8 +2557,6 @@ export const shops: Shop[] = [
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [50],
       },
     ]
@@ -3131,22 +2573,16 @@ export const shops: Shop[] = [
       {
         "name": Item.BANDAGE,
         "price": 8000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 25, 30],
       },
       {
         "name": Item.FIRST_AID_KIT,
         "price": 18000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 8, 10],
       },
       {
         "name": Item.ANTIVENOM,
         "price": 10000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 8, 40],
       },
       {
@@ -3180,8 +2616,6 @@ export const shops: Shop[] = [
       {
         "name": Item.MEDICARE_PACKAGE,
         "price": 24000,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 15, 30],
       },
       {
@@ -3201,8 +2635,6 @@ export const shops: Shop[] = [
       {
         "name": Item.PLASTIC_BAG,
         "price": 250,
-        "amount": 1,
-        "unit": Unit.ITEM,
         "quantity": [-1, 5, 5],
       },
     ]
