@@ -108,4 +108,8 @@ const furnitures: Record<Item, Furniture> = {
   [Item.LARGE_DOOR_LOCK]: {
     "security": 15,
   },
+  [Item.LARGE_LABORATORY_CABINET]: {
+    "slots": 40,
+    "hideout-stash": 1,
+  }
 }
