@@ -1,23 +1,21 @@
 import './Dds2Map.css'
 import {lazy, Suspense} from "react";
 import Loading from "../components/Loading.tsx";
-import MapDrawer from "../components/dds2-map/MapDrawer.tsx";
-import {Drawer, Typography} from "@mui/material";
+import MapDrawer from "../components/dds2-map/MapDrawer.tsx"
+import MarkerDrawer from "../components/dds2-map/MarkerDrawer.tsx";
 import useMapData from "../hooks/useMapData.ts";
 
+
+const Map = lazy(() => import('../components/dds2-map/Dds2Leaflet.tsx'))
 
 function Dds2Map() {
 
   const MapData = useMapData()
   const mapDrawerWidth: number = 280
 
-  const Map = lazy(() => import('../components/dds2-map/Dds2Leaflet.tsx'))
-
   return (
     <div className={'container'}>
-      <Drawer open={!!MapData.chosenMarker}> {/* Crashes because of the lazy loading --> TODO: Search for fix */}
-        <Typography>{MapData.chosenMarker!.name}</Typography>
-      </Drawer>
+      <MarkerDrawer chosenMarker={MapData.chosenMarker}/>
 
       <Suspense fallback={<Loading/>}>
         <Map/>

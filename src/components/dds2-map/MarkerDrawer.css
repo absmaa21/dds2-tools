@@ -1,0 +1,13 @@
+.marker-drawer {
+    display: flex;
+    flex-direction: column;
+    width: 0;
+}
+
+.drawer-open {
+    width: 420px;
+}
+
+.content {
+
+}
