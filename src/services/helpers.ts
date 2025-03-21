@@ -1,19 +1,22 @@
-import {Data, Equipment, Furniture, ShopItem} from "../types/data.ts";
+import {Data, Equipment, Furniture, Shop} from "../types/data.ts";
 import {Item, MarkerType} from "../types/enums.ts";
 import {equipments} from "./local/equipments.ts";
 import {furnitures} from "./local/furnitures.ts";
+import {ChoosableMarkers} from "../types/map.ts";
 
-export function getAvailableLevel(item: ShopItem) {
-    let lvl = 0;
-    for (let i = 0; i < item.quantity.length; i++) {
-        lvl = i
-        if (item.quantity[i] > 0) return lvl
+
+/**
+ * Returns the lowest needed level for given shop item
+ * @param quantities
+ */
+export function getLowestNeededLevel(quantities: number[]): number | undefined {
+    for (let i = 0; i < quantities.length; i++) {
+        if (quantities[i] > 0) return i
     }
-    return lvl;
 }
 
 
-export function getMarkerDataStr(marker: MarkerType): keyof Data{
+export function getMarkerDataStr(marker: MarkerType): keyof Data {
     switch (marker) {
         case MarkerType.HIDEOUT: return 'hideouts'
         case MarkerType.PAWN_SHOP: return 'pawn-shops'
@@ -32,4 +35,35 @@ export function getMarkerDataStr(marker: MarkerType): keyof Data{
 export function getStatsOfItem(item: Item): Equipment | Furniture | undefined {
     if (equipments.has(item)) return equipments.get(item)
     else if (furnitures.has(item)) return furnitures.get(item)
+}
+
+
+/**
+ * Confirms if given marker is from type Shop
+ * This is checked by the keys: "check-possible"
+ * @param marker
+ */
+export function isShop(marker: ChoosableMarkers): marker is Shop {
+    if (!marker) return false
+    return "check-possible" in marker
+}
+
+
+/**
+ * Confirms if given obj is from type Equipment
+ * This is checked by the keys: "tier"
+ * @param obj
+ */
+export function isEquipment(obj: object): obj is Equipment {
+    return "tier" in obj
+}
+
+
+/**
+ * Returns the discounted price
+ * @param price Base price
+ * @param discount Discount in format 0.05
+ */
+export function getDiscountedPrice(price: number, discount: number): number {
+    return price - (price * discount)
 }
