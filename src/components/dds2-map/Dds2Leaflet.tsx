@@ -1,6 +1,6 @@
 import L from "leaflet";
 import useMapData from "../../hooks/useMapData.ts";
-import {IItem, Shop} from "../../types/data.ts";
+import {Shop, ShopItem} from "../../types/data.ts";
 import {Item, MarkerType} from "../../types/enums.ts";
 import {ImageOverlay, MapContainer, Marker, Popup, useMapEvents} from "react-leaflet";
 import useData from "../../hooks/useData.ts";
@@ -30,8 +30,9 @@ function Dds2Leaflet() {
   const {data} = useData()
   const {visibleTypes, selectedItems, setChosenMarker} = useMapData()
   const mapBounds = L.latLngBounds([1, 0], [0, 1])
+  const maxBounds = L.latLngBounds([1.1, -0.1], [-0.1, 1.1])
 
-  function hasSelectedItem(array?: IItem[]) {
+  function hasSelectedItem(array?: ShopItem[]) {
     if (!array) return false
     return array.some(el => selectedItems.includes(el.name as Item))
   }
@@ -52,7 +53,7 @@ function Dds2Leaflet() {
       minZoom={10}
       maxZoom={14}
       style={{height: '100vh', width: '100%'}}
-      maxBounds={mapBounds}
+      maxBounds={maxBounds}
       maxBoundsViscosity={0.01}
     >
       <MapEvents onClick={() => setChosenMarker(null)}/>
