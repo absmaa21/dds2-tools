@@ -25,7 +25,7 @@ function ShopItem({item, level, shop}: Props) {
 
       <Row>
         <Typography fontSize={12} color={'#fffa'}>B {getDiscountedPrice(item.price, shop.discounts[level]).toLocaleString()}</Typography>
-        <Typography fontSize={12} color={'#fffa'}>x{item.quantity[level]?.toLocaleString() ?? 'unknown'}</Typography>
+        <Typography fontSize={12} color={'#fffa'}>x{item.quantity[level]?.toLocaleString() ?? ' unknown quantity'}</Typography>
       </Row>
 
       {level < (neededLevel ?? 999) && <div className={"needed-level-overlay"}>
@@ -34,7 +34,7 @@ function ShopItem({item, level, shop}: Props) {
 
       <Divider style={{marginTop: 4, marginBottom: 4}}/>
 
-      {details && Object.entries(details).map(([key, value]) => (
+      {details && Object.entries(details).map(([key, value]) => !["tier"].includes(key) && (
         <Row key={key}>
           <Typography fontSize={11} color={'#fffa'}>{key}</Typography>
           <Typography fontSize={11} color={'#fffa'}>{!Number.isNaN(value) ? (value as number).toLocaleString() : value}</Typography>
