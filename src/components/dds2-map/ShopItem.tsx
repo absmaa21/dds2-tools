@@ -1,7 +1,8 @@
 import "./ShopItem.css"
-import {Typography} from "@mui/material";
+import {Divider, Typography} from "@mui/material";
 import type {Shop, ShopItem} from "../../types/data.ts";
 import {getDiscountedPrice, getLowestNeededLevel, getStatsOfItem, isEquipment} from "../../services/helpers.ts";
+import Row from "../Row.tsx";
 
 interface Props {
   item: ShopItem,
@@ -18,7 +19,8 @@ function ShopItem({item, level, shop}: Props) {
     <div className={"shop-item-container"}>
       <div className={"shop-item-row"}>
         <Typography fontSize={12} fontWeight={700}>{item.name}</Typography>
-        {details && isEquipment(details) && <Typography fontSize={11} fontWeight={700}>T{details.tier}</Typography>}
+        {details && isEquipment(details) && <Typography fontSize={10} fontWeight={700}>T{details.tier}</Typography>}
+        {item.amount && <Typography fontSize={11} fontWeight={700} color={'#fffa'}>{`${item.amount} ${item.unit}`}</Typography>}
       </div>
 
       <div className={"shop-item-row"}>
@@ -29,6 +31,15 @@ function ShopItem({item, level, shop}: Props) {
       {level < (neededLevel ?? 999) && <div className={"needed-level-overlay"}>
         Level {neededLevel ?? 'unknown'} is needed!
       </div>}
+
+      <Divider style={{marginTop: 4, marginBottom: 4}}/>
+
+      {details && Object.entries(details).map(([key, value]) => (
+        <Row key={key}>
+          <Typography fontSize={11} color={'#fffa'}>{key}</Typography>
+          <Typography fontSize={11} color={'#fffa'}>{!Number.isNaN(value) ? (value as number).toLocaleString() : value}</Typography>
+        </Row>
+      ))}
     </div>
   );
 }

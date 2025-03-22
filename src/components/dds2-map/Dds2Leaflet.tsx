@@ -123,7 +123,6 @@ function Dds2Leaflet() {
               key={i} icon={anchorIcon}
               position={L.latLng(m.location.x, m.location.y)}
               eventHandlers={{click: () => setChosenMarker(null)}}>
-              <Popup>{m.name}</Popup>
           </Marker>)
       }
 
