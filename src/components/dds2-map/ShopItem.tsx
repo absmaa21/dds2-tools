@@ -17,16 +17,16 @@ function ShopItem({item, level, shop}: Props) {
 
   return (
     <div className={"shop-item-container"}>
-      <div className={"shop-item-row"}>
+      <Row>
         <Typography fontSize={12} fontWeight={700}>{item.name}</Typography>
         {details && isEquipment(details) && <Typography fontSize={10} fontWeight={700}>T{details.tier}</Typography>}
         {item.amount && <Typography fontSize={11} fontWeight={700} color={'#fffa'}>{`${item.amount} ${item.unit}`}</Typography>}
-      </div>
+      </Row>
 
-      <div className={"shop-item-row"}>
+      <Row>
         <Typography fontSize={12} color={'#fffa'}>B {getDiscountedPrice(item.price, shop.discounts[level]).toLocaleString()}</Typography>
         <Typography fontSize={12} color={'#fffa'}>x{item.quantity[level]?.toLocaleString() ?? 'unknown'}</Typography>
-      </div>
+      </Row>
 
       {level < (neededLevel ?? 999) && <div className={"needed-level-overlay"}>
         Level {neededLevel ?? 'unknown'} is needed!
