@@ -72,7 +72,6 @@ export enum Item {
     FERTILIZER_SYNTHETIC = "Synthetic fertilizer",
     COOKING_POT = "Cooking pot",
     MAP = "Map",
-    BANDAGE = "Bandage",
     MOBILE_PHONE = "Mobile phone",
     ERGOT_RYE = "Ergot rye",
     FIRECRACKER = "Firecracker",
@@ -112,7 +111,7 @@ export enum Item {
 
     // Consumables
     LIMONADA_DE_COCO = "Limonada de Coco",
-
+    BANDAGE = "Bandage",
 
     // Furniture
     SMALL_CONTAINER = "Small Container",

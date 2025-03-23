@@ -11,8 +11,11 @@ export const tools: Map<Item, Tool> = new Map<Item, Tool>([
     "power": 50,
     "range": 22.0,
   }],
-  [Item.HID_FLASHLIGHT,  {
+  [Item.HID_FLASHLIGHT, {
     "power": 100,
     "range": 40.0,
-  }]
+  }],
+  [Item.WIRE_CUTTERS, {
+    "hp": 70,
+  }],
 ])

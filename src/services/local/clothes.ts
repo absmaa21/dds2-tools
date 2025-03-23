@@ -89,5 +89,26 @@ export const clothes: Map<Item, Cloth> = new Map<Item, Cloth>([
     "agility": -5,
     "visibility": +3,
     "swag": -7,
+  }],
+  [Item.GLASSES, {
+    "visibility": -2,
+    "swag": +5,
+  }],
+  [Item.BASEBALL_CAP, {
+    "visibility": -4,
+    "swag": +1,
+    "sus": +2,
+  }],
+  [Item.TSHIRT, {
+    "agility": +1,
+    "comfort": +1,
+  }],
+  [Item.PANTS, {
+    "slots": 2,
+    "quick-slots": 1,
+    "agility": +4,
+    "comfort": +2,
+    "snake-proof": +0.03,
+    "damage-resistance": 1,
   }]
 ])

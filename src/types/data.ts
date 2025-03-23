@@ -89,6 +89,7 @@ export interface Equipment extends Furniture {
 }
 
 export interface Tool {
+  hp?: number,
   power?: number,
   range?: number,
 }
@@ -114,4 +115,9 @@ export interface Cloth {
   "comfort"?: number,
   "damage-resistance"?: number,
   "gas-resistance"?: boolean,
+}
+
+export interface Consumable {
+  "health"?: number,
+  "removes-bleeding"?: boolean,
 }
