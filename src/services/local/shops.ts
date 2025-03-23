@@ -3058,14 +3058,41 @@ export const shops: Shop[] = [
   {
     "name": "The Herbalist",
     "area": Area.NO_MANS_LAND,
-    "check-possible": true,
+    "check-possible": false,
     "location": {x: 0.631014, y: 0.46898},
-    "discounts": [0.0],
+    "discounts": [0.0, 0.1],
     "items": [
       {
         "name": Item.POPPY_HEAD_YOUNG,
-        "price": 0,
-        "quantity": [0],
+        "price": 550,
+        "quantity": [10],
+      },
+      {
+        "name": Item.OPIUM,
+        "price": 13200,
+        "quantity": [1],
+      },
+      {
+        "name": Item.PSILOCYBIN_MUSHROOMS_DIRTY,
+        "price": 50,
+        "quantity": [10],
+      },
+      {
+        "name": Item.MORNING_GLORY,
+        "price": 800,
+        "quantity": [6],
+      },
+      {
+        "name": Item.FERTILIZER,
+        "price": 8500,
+        "quantity": [5],
+        "amount": 5000,
+        "unit": Unit.MASS,
+      },
+      {
+        "name": Item.PLASTIC_BAGGIES,
+        "price": 1,
+        "quantity": [50],
       }
     ],
   }
