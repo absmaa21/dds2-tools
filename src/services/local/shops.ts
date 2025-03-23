@@ -2920,7 +2920,7 @@ export const shops: Shop[] = [
   },
   {
     "name": "Military Equipment Shop",
-    "area": Area.CALLEJON,
+    "area": Area.DUENO_DEL_MAR,
     "check-possible": true,
     "location": {x: 0.511544, y: 0.817107},
     "discounts": [0.0, 0.05, 0.1],
