@@ -210,4 +210,30 @@ export const restaurants: Shop[] = [
       },
     ],
   },
+  {
+    "name": "Texas Spirit Bar",
+    "area": Area.DUENO_DEL_MAR,
+    "location": {x: 0.374906, y: 0.415073},
+    "check-possible": true,
+    "discounts": [0.0, 0.1],
+    "items": [
+      {
+        "name": Item.WATER_BOTTLE_SMALL,
+        "price": 500,
+        "quantity": [10],
+        "amount": 500,
+        "unit": Unit.LIQUID,
+      },
+      {
+        "name": Item.LIMONADA_DE_COCO,
+        "price": 700,
+        "quantity": [10],
+      },
+      {
+        "name": Item.BEER,
+        "price": 700,
+        "quantity": [6],
+      },
+    ],
+  },
 ]
