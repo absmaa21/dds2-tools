@@ -174,12 +174,12 @@ export const shops: Shop[] = [
         "quantity": [1]
       },
       {
-        "name": Item.BACKPACK_SMALL,
+        "name": Item.SMALL_BACKPACK,
         "price": 1500,
         "quantity": [1]
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1]
       },
@@ -327,7 +327,7 @@ export const shops: Shop[] = [
         "quantity": [5],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1],
       },
@@ -380,7 +380,7 @@ export const shops: Shop[] = [
     "discounts": [0.0, 0.05, 0.1],
     "items": [
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1, 2],
       },
@@ -466,12 +466,12 @@ export const shops: Shop[] = [
         "quantity": [5, 10, 15],
       },
       {
-        "name": Item.BACKPACK_SMALL,
+        "name": Item.SMALL_BACKPACK,
         "price": 1500,
         "quantity": [3, 5, 7],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2, 4, 6],
       },
@@ -653,7 +653,7 @@ export const shops: Shop[] = [
     "discounts": [0.0],
     "items": [
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1],
       },
@@ -771,12 +771,12 @@ export const shops: Shop[] = [
         "quantity": [5, 5, 5],
       },
       {
-        "name": Item.BACKPACK_SMALL,
+        "name": Item.SMALL_BACKPACK,
         "price": 1500,
         "quantity": [2, 2, 3],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2, 3, 3],
       },
@@ -841,7 +841,7 @@ export const shops: Shop[] = [
         "quantity": [3, 5, 9],
       },
       {
-        "name": Item.BACKPACK_MEDIUM,
+        "name": Item.MEDIUM_BACKPACK,
         "price": 3000,
         "quantity": [0, 1, 2],
       },
@@ -988,7 +988,7 @@ export const shops: Shop[] = [
         "quantity": [3, 5, 8],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2, 4, 6],
       },
@@ -1245,7 +1245,7 @@ export const shops: Shop[] = [
         "quantity": [3],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2],
       },
@@ -1270,7 +1270,7 @@ export const shops: Shop[] = [
         "quantity": [3],
       },
       {
-        "name": Item.BACKPACK_MEDIUM,
+        "name": Item.MEDIUM_BACKPACK,
         "price": 3000,
         "quantity": [1],
       },
@@ -1604,7 +1604,7 @@ export const shops: Shop[] = [
         "quantity": [1],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 300,
         "quantity": [1],
       },
@@ -1702,7 +1702,7 @@ export const shops: Shop[] = [
         "quantity": [1],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2],
       },
@@ -1828,7 +1828,7 @@ export const shops: Shop[] = [
         "quantity": [3],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2],
       },
@@ -1961,7 +1961,7 @@ export const shops: Shop[] = [
         "quantity": [1],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1],
       },
@@ -2038,7 +2038,7 @@ export const shops: Shop[] = [
         "quantity": [4],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [1],
       },
@@ -2298,7 +2298,7 @@ export const shops: Shop[] = [
         "quantity": [2, 3, 4],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [2, 4, 6],
       },
@@ -2348,7 +2348,7 @@ export const shops: Shop[] = [
         "quantity": [1, 2, 5],
       },
       {
-        "name": Item.BACKPACK_SMALL,
+        "name": Item.SMALL_BACKPACK,
         "price": 1800,
         "quantity": [3, 5, 7],
       },
@@ -2805,7 +2805,7 @@ export const shops: Shop[] = [
         "quantity": [3, 5, 7],
       },
       {
-        "name": Item.FLASHLIGHT_SMALL,
+        "name": Item.SMALL_FLASHLIGHT,
         "price": 3000,
         "quantity": [3, 5, 7],
       },
@@ -2860,7 +2860,7 @@ export const shops: Shop[] = [
         "quantity": [1, 2, 5],
       },
       {
-        "name": Item.BACKPACK_SMALL,
+        "name": Item.SMALL_BACKPACK,
         "price": 1800,
         "quantity": [3, 5, 7],
       },
