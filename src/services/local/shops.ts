@@ -3065,35 +3065,44 @@ export const shops: Shop[] = [
       {
         "name": Item.POPPY_HEAD_YOUNG,
         "price": 550,
-        "quantity": [10],
+        "quantity": [10, 15],
       },
       {
         "name": Item.OPIUM,
         "price": 13200,
-        "quantity": [1],
+        "quantity": [1, 2],
+        "amount": 10,
+        "unit": Unit.MASS,
       },
       {
         "name": Item.PSILOCYBIN_MUSHROOMS_DIRTY,
         "price": 50,
-        "quantity": [10],
+        "quantity": [10, 30],
       },
       {
         "name": Item.MORNING_GLORY,
         "price": 800,
-        "quantity": [6],
+        "quantity": [6, 12],
       },
       {
         "name": Item.FERTILIZER,
         "price": 8500,
-        "quantity": [5],
+        "quantity": [5, 8],
         "amount": 5000,
         "unit": Unit.MASS,
       },
       {
         "name": Item.PLASTIC_BAGGIES,
         "price": 1,
-        "quantity": [50],
-      }
+        "quantity": [50, 100],
+      },
+      {
+        "name": Item.OPIUM,
+        "price": 66000,
+        "quantity": [0, 1],
+        "amount": 50,
+        "unit": Unit.MASS,
+      },
     ],
   }
 ]
