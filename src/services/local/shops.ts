@@ -2976,7 +2976,7 @@ export const shops: Shop[] = [
         "quantity": [-1, -1, 4],
       },
       {
-        "name": Item.FLASHLIGHT_HID,
+        "name": Item.HID_FLASHLIGHT,
         "price": 6000,
         "quantity": [-1, -1, 4],
       },
