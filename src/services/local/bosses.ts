@@ -66,7 +66,7 @@ export const bosses: Boss[] = [
       },
       {
         "name": Item.AMP,
-        "amount": 135,
+        "amount": 150,
         "price-per-g": 2000,
       },
       {
@@ -81,11 +81,11 @@ export const bosses: Boss[] = [
       },
       {
         "name": Item.SHROOMS,
-        "amount": -1,
+        "amount": 80,
         "price-per-g": 2500,
       },
       {
-        "name": Item.COCS,
+        "name": Item.COCAINE,
         "amount": -1,
         "price-per-g": 6000,
       },
@@ -99,12 +99,12 @@ export const bosses: Boss[] = [
     "demands": [
       {
         "name": Item.WEED_INDICA,
-        "amount": 175,
+        "amount": 350,
         "price-per-g": 1500,
       },
       {
         "name": Item.AMP,
-        "amount": 150,
+        "amount": 300,
         "price-per-g": 2000,
       },
       {
@@ -114,8 +114,13 @@ export const bosses: Boss[] = [
       },
       {
         "name": Item.OPIUM,
-        "amount": 100,
+        "amount": 200,
         "price-per-g": 2100,
+      },
+      {
+        "name": Item.SHROOMS,
+        "amount": 100,
+        "price-per-g": 2500,
       },
     ],
   },
@@ -140,7 +145,7 @@ export const bosses: Boss[] = [
         "price-per-g": 4000,
       },
       {
-        "name": Item.COCS,
+        "name": Item.COCAINE,
         "amount": 150,
         "price-per-g": 7000,
       },
@@ -184,7 +189,7 @@ export const bosses: Boss[] = [
     "demands": [
       {
         "name": Item.WEED_INDICA,
-        "amount": -1,
+        "amount": 150,
         "price-per-g": 1500,
       },
       {
@@ -198,7 +203,7 @@ export const bosses: Boss[] = [
         "price-per-g": 2200,
       },
       {
-        "name": Item.COCS,
+        "name": Item.COCAINE,
         "amount": -1,
         "price-per-g": 7000,
       },
