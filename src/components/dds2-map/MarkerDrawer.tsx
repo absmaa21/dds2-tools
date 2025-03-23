@@ -42,11 +42,12 @@ function MarkerDrawer({chosenMarker}: Props) {
   return (
     <div className={`marker-drawer ${chosenMarker ? "drawer-open" : ""}`}>
       <div className={"header"}>
-        <Typography variant={"h6"} component={"h3"} noWrap fontWeight={700}>{chosenMarker.name}</Typography>
+        <Typography variant={"h6"} component={"h3"} fontWeight={700}>{chosenMarker.name}</Typography>
         <Typography variant={"subtitle1"} component={"h4"} noWrap fontWeight={700} fontSize={14} color={'#fff5'}
                     letterSpacing={1}>
           {chosenMarker.area}
         </Typography>
+
         {isShop(chosenMarker) && <>
             <Typography variant={"subtitle2"} fontWeight={600}>
                 Check possible {chosenMarker["check-possible"] ? "✅" : "❌"}

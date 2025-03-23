@@ -36,14 +36,14 @@ function ShopItem({item, level, shop}: Props) {
       </div>}
 
       {details && Object.entries(details).map(([key, value], i) => !["tier"].includes(key) && (
-        <>
-        {i === 0 && <Divider style={{marginTop: 4, marginBottom: 4}}/>}
-          <Row key={key}>
+        <div key={key}>
+          {i === 0 && <Divider style={{marginTop: 4, marginBottom: 4}}/>}
+          <Row>
             <Typography fontSize={11} color={'#fffa'}>{key}</Typography>
             <Typography fontSize={11}
                         color={'#fffa'}>{!Number.isNaN(value) ? (value as number).toLocaleString() : value}</Typography>
           </Row>
-        </>
+        </div>
       ))}
     </div>
   );

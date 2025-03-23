@@ -1,8 +1,7 @@
-import {Data, Equipment, Furniture, Shop} from "../types/data.ts";
+import {Boss, Data, Equipment, Furniture, Hideout, Shop} from "../types/data.ts";
 import {Item, MarkerType} from "../types/enums.ts";
 import {equipments} from "./local/equipments.ts";
 import {furnitures} from "./local/furnitures.ts";
-import {ChoosableMarkers} from "../types/map.ts";
 
 
 /**
@@ -43,7 +42,7 @@ export function getStatsOfItem(item: Item): Equipment | Furniture | undefined {
  * This is checked by the keys: "check-possible"
  * @param marker
  */
-export function isShop(marker: ChoosableMarkers): marker is Shop {
+export function isShop(marker: object): marker is Shop {
     if (!marker) return false
     return "check-possible" in marker
 }
@@ -56,6 +55,26 @@ export function isShop(marker: ChoosableMarkers): marker is Shop {
  */
 export function isEquipment(obj: object): obj is Equipment {
     return "tier" in obj
+}
+
+
+/**
+ * Confirms if given obj is from type Boss
+ * This is checked by the keys: "demands"
+ * @param obj
+ */
+export function isBoss(obj: object): obj is Boss {
+    return "demands" in obj
+}
+
+
+/**
+ * Confirms if given obj is from type Hideout
+ * This is checked by the keys: "price", "visibility", "security", "comfort"
+ * @param obj
+ */
+export function isHideout(obj: object): obj is Hideout {
+    return "price" in obj && "visibility" in obj && "security" in obj && "comfort" in obj
 }
 
 
