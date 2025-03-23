@@ -99,3 +99,18 @@ export interface Weapon {
   sus?: number,
   concealed?: boolean,
 }
+
+export interface Cloth {
+  "hp"?: number,
+  "agility"?: number,
+  "visibility"?: number,
+  "sus"?: number,
+  "snake-proof"?: number,
+  "swag"?: number,
+  "slots"?: number,
+  "quick-slots"?: number,
+  "secret-slots"?: number,
+  "comfort"?: number,
+  "damage-resistance"?: number,
+  "gas-resistance"?: boolean,
+}

@@ -1,0 +1,93 @@
+import {Item} from "../../types/enums.ts";
+import {Cloth} from "../../types/data.ts";
+
+export const clothes: Map<Item, Cloth> = new Map<Item, Cloth>([
+  [Item.FIELD_BOOTS, {
+    "hp": 3000,
+    "agility": -2,
+    "visibility": -5,
+    "sus": +1,
+    "snake-proof": +0.5,
+  }],
+  [Item.SMALL_BACKPACK, {
+    "hp": 1000,
+    "slots": 8,
+    "agility": -12,
+    "visibility": +8,
+    "swag": -3,
+  }],
+  [Item.DUFFLE_BAG, {
+    "hp": 5000,
+    "slots": 14,
+    "quick-slots": -1,
+    "agility": -20,
+    "visibility": +17,
+    "swag": -7,
+    "sus": +7,
+  }],
+  [Item.LARGE_BACKPACK, {
+    "hp": 3000,
+    "slots": 18,
+    "secret-slots": 2,
+    "quick-slots": 2,
+    "agility": -30,
+    "visibility": +25,
+    "swag": -15,
+    "sus": +12,
+  }],
+  [Item.FANNYPACK, {
+    "hp": 300,
+    "slots": 2,
+    "quick-slots": 2,
+  }],
+  [Item.MILITARY_JACKET, {
+    "hp": 1200,
+    "slots": 6,
+    "quick-slots": 1,
+    "agility": +2,
+    "visibility": -10,
+    "comfort": +7,
+    "sus": +10,
+    "damage-resistance": 8,
+  }],
+  [Item.MILITARY_PANTS, {
+    "hp": 1200,
+    "slots": 6,
+    "quick-slots": 2,
+    "agility": +3,
+    "visibility": -10,
+    "comfort": +5,
+    "sus": +7,
+    "snake-proof": +0.06,
+    "damage-resistance": 3,
+  }],
+  [Item.MILITARY_BOOTS, {
+    "hp": 3000,
+    "agility": +5,
+    "visibility": -10,
+    "comfort": +2,
+    "sus": +2,
+    "snake-proof": +0.25,
+    "damage-resistance": 4,
+  }],
+  [Item.MILITARY_CAP, {
+    "hp": 1200,
+    "visibility": -10,
+    "comfort": +1,
+    "sus": +4,
+  }],
+  [Item.GAS_MASK, {
+    "visibility": -10,
+    "swag": -5,
+    "sus": +15,
+    "gas-resistance": true,
+  }],
+  [Item.PLASTIC_BAG, {
+    "hp": 5,
+    "slots": 2,
+    "quick-slots": -1,
+    "agility": -5,
+    "visibility": +3,
+    "swag": -7,
+  }]
+])
