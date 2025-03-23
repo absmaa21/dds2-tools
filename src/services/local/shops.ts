@@ -2925,6 +2925,131 @@ export const shops: Shop[] = [
     "location": {x: 0.511544, y: 0.817107},
     "discounts": [0.0, 0.05, 0.1],
     "items": [
+      {
+        "name": Item.HAMMER,
+        "price": 11000,
+        "quantity": [-1, -1, 7],
+      },
+      {
+        "name": Item.CROWBAR,
+        "price": 12000,
+        "quantity": [-1, -1, 7],
+      },
+      {
+        "name": Item.SHOVEL,
+        "price": 9000,
+        "quantity": [-1, -1, 7],
+      },
+      {
+        "name": Item.MULTITOOL,
+        "price": 6000,
+        "quantity": [-1, -1, 14],
+      },
+      {
+        "name": Item.WIRE_CUTTERS,
+        "price": 5000,
+        "quantity": [-1, -1, 8],
+      },
+      {
+        "name": Item.BOLT_CUTTER,
+        "price": 9500,
+        "quantity": [-1, -1, 9],
+      },
+      {
+        "name": Item.MILITARY_KNIFE,
+        "price": 21000,
+        "quantity": [-1, -1, 4],
+      },
+      {
+        "name": Item.MACHETE,
+        "price": 26000,
+        "quantity": [-1, -1, 4],
+      },
+      {
+        "name": Item.SMALL_FLASHLIGHT,
+        "price": 4000,
+        "quantity": [-1, -1, 12],
+      },
+      {
+        "name": Item.FLASHLIGHT,
+        "price": 5000,
+        "quantity": [-1, -1, 4],
+      },
+      {
+        "name": Item.FLASHLIGHT_HID,
+        "price": 6000,
+        "quantity": [-1, -1, 4],
+      },
+      {
+        "name": Item.FIELD_BOOTS,
+        "price": 9900,
+        "quantity": [-1, -1, 6],
+      },
+      {
+        "name": Item.SMALL_BACKPACK,
+        "price": 4000,
+        "quantity": [-1, -1, 5],
+      },
+      {
+        "name": Item.DUFFLE_BAG,
+        "price": 6000,
+        "quantity": [-1, -1, 4],
+      },
+      {
+        "name": Item.LARGE_BACKPACK,
+        "price": 10000,
+        "quantity": [-1, -1, 5],
+      },
+      {
+        "name": Item.FANNYPACK,
+        "price": 1000,
+        "quantity": [-1, -1, 5],
+      },
+      {
+        "name": Item.DOG_TAG,
+        "price": 3500,
+        "quantity": [-1, -1, 5],
+      },
+      {
+        "name": Item.MILITARY_JACKET,
+        "price": 17000,
+        "quantity": [-1, -1, 3],
+      },
+      {
+        "name": Item.MILITARY_PANTS,
+        "price": 14000,
+        "quantity": [-1, -1, 3],
+      },
+      {
+        "name": Item.MILITARY_BOOTS,
+        "price": 11000,
+        "quantity": [-1, -1, 3],
+      },
+      {
+        "name": Item.MILITARY_CAP,
+        "price": 5000,
+        "quantity": [-1, -1, 3],
+      },
+      {
+        "name": Item.GAS_MASK,
+        "price": 45000,
+        "quantity": [-1, -1, 2],
+      },
+      {
+        "name": Item.COMBAT_RATION,
+        "price": 13000,
+        "quantity": [-1, -1, 30],
+      },
+      {
+        "name": Item.PLASTIC_BAG,
+        "price": 500,
+        "quantity": [5, 5, 5],
+      },
+      {
+        "name": Item.CASH_LARGE,
+        "price": 1,
+        "quantity": [100000, 200000, 300000],
+      },
     ],
   },
   // Bahia - Downtown
