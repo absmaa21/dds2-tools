@@ -153,6 +153,7 @@ export enum Item {
     LARGE_DOOR_LOCK = "Large door lock",
     LARGE_SAFE = "Large safe",
     LARGE_LABORATORY_CABINET = "Large laboratory cabinet",
+    INDUSTRIAL_CONTAINER = "Industrial container",
 
     // Equipment
     LABORATORY_TRAY = "Laboratory Tray",
@@ -180,6 +181,11 @@ export enum Item {
     KITCHEN_MIXER = "Kitchen mixer",
     OUTDOOR_POT_BOX = "Outdoor pot box",
     PLASTIC_BOX = "Plastic box (for plants)",
+    LABORATORY_TRAY_DRYER = "Laboratory tray dryer",
+    MAGNETIC_STIRRER = "Magnetic stirrer",
+    MICROFINE_GRINDER = "Microfine grinder",
+    ANALYTICAL_GRINDER = "Analytical grinder",
+    LABORATORY_SOAKING_VAT = "Laboratory soaking vat",
 
     // Clothes
     FIELD_BOOTS = "Field boots",

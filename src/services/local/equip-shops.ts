@@ -666,4 +666,95 @@ export const equipShops: Shop[] = [
       },
     ],
   },
+  {
+    "name": "Equipment store",
+    "area": Area.DUENO_DEL_MAR,
+    "check-possible": false,
+    "location": {x: 0.45301, y: 0.354307},
+    "discounts": [0.0, 0.05, 0.1, 0.15],
+    "furnitures": [
+      {
+        "name": Item.SMALL_BARREL,
+        "price": 2500,
+        "quantity": [5, -1, -1, 20],
+      },
+      {
+        "name": Item.MEDIUM_BARREL,
+        "price": 4000,
+        "quantity": [5, -1, -1, 20],
+      },
+      {
+        "name": Item.LARGE_BARREL,
+        "price": 8200,
+        "quantity": [5, -1, -1, 20],
+      },
+      {
+        "name": Item.INDUSTRIAL_CONTAINER,
+        "price": 70000,
+        "quantity": [3, -1, -1, 10],
+      },
+    ],
+    "equipments": [
+      {
+        "name": Item.LABORATORY_TRAY,
+        "price": 3600,
+        "quantity": [5, -1, -1, 20],
+      },
+      {
+        "name": Item.LABORATORY_AUTOCLAVE,
+        "price": 78000,
+        "quantity": [8, -1, -1, 15],
+      },
+      {
+        "name": Item.LABORATORY_WATER_BATH,
+        "price": 132000,
+        "quantity": [5, -1, -1, 12],
+      },
+      {
+        "name": Item.LABORATORY_ICE_BATH,
+        "price": 228000,
+        "quantity": [3, -1, -1, 6],
+      },
+      {
+        "name": Item.LABORATORY_CENTRIFUGE,
+        "price": 168000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.LABORATORY_ORBITAL_SHAKER,
+        "price": 300000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.LABORATORY_OVEN,
+        "price": 114000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.LABORATORY_TRAY_DRYER,
+        "price": 660000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.MAGNETIC_STIRRER,
+        "price": 360000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.MICROFINE_GRINDER,
+        "price": 228000,
+        "quantity": [2, -1, -1, 5],
+      },
+      {
+        "name": Item.ANALYTICAL_GRINDER,
+        "price": 330000,
+        "quantity": [1, -1, -1, 5],
+      },
+      {
+        "name": Item.LABORATORY_SOAKING_VAT,
+        "price": 495000,
+        "quantity": [2, -1, -1, 5],
+      },
+    ],
+  },
 ]

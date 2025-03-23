@@ -11,6 +11,10 @@ export const furnitures: Map<Item, Furniture> = new Map<Item, Furniture>([
   [Item.LARGE_CONTAINER, {
     "substance-storage": 5000,
   }],
+  [Item.INDUSTRIAL_CONTAINER, {
+    "visibility": 1,
+    "substance-storage": 500000,
+  }],
   [Item.LABORATORY_CABINET, {
     "slots": 8,
     "hideout-stash": 1,
@@ -111,5 +115,5 @@ export const furnitures: Map<Item, Furniture> = new Map<Item, Furniture>([
   [Item.LARGE_LABORATORY_CABINET, {
     "slots": 40,
     "hideout-stash": 1,
-  }]
+  }],
 ])
