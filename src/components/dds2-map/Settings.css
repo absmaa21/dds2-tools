@@ -1,0 +1,52 @@
+.settings-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 50%;
+    left: 50%;
+    width: min(50%, 560px);
+    height: 560px;
+    padding: 16px;
+    border-radius: 16px;
+    transform: translate(-50%, -50%);
+    background-color: #212121;
+    box-shadow: #000a 0 0 16px;
+}
+
+.settings-container h2 {
+    margin-bottom: 4px;
+}
+
+.settings-container p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.4);
+    margin-top: 2px;
+}
+
+.settings-container p span {
+    font-weight: 300;
+}
+
+.faq-container h4 {
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.faq-container p {
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+a {
+    color: rgb(51, 173, 255, 0.5);
+    text-decoration-line: underline;
+}
+
+.versions-container {
+    gap: 4px;
+}
+
+.versions-container p {
+    margin-bottom: 0;
+}

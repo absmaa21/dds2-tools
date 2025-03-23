@@ -12,8 +12,8 @@ import {medicPoints} from "./medic-points.ts";
 
 
 const localData: Data = {
-  "last-update": 1720368559454,
-  "version": 6,
+  "last-update": 1742742905000,
+  "version": 7,
   "game-version": "1.0.13",
   "hideouts": hideouts,
   "shops": shops,

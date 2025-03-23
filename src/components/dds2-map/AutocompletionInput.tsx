@@ -5,7 +5,6 @@ import useMapData from "../../hooks/useMapData.ts";
 function AutocompletionInput() {
 
   const MapData = useMapData()
-  const [input, setInput] = useState<string>('')
 
   const [suggestions, setSuggestions] = useState<string[]>([])
   const [chosenIndex, setChosenIndex] = useState<number>(0)
@@ -13,22 +12,22 @@ function AutocompletionInput() {
   const inputRef = useRef<HTMLInputElement | null>(null)
 
   useEffect(() => {
-    if (input) {
+    if (MapData.itemSearch) {
       const filteredItems = MapData.getAvailableItems().filter(i =>
-        i.toLowerCase().includes(input.toLowerCase())
+        i.toLowerCase().includes(MapData.itemSearch.toLowerCase())
       ) || [];
       setSuggestions(filteredItems);
     } else {
       setSuggestions([]);
     }
-  }, [input, MapData]);
+  }, [MapData.itemSearch, MapData]);
 
   function submitSuggestion(suggestion: string) {
     if (MapData.getAvailableItems().find(i => i === suggestion))
       MapData.submitItem(suggestion)
 
     setSuggestions([]);
-    setInput('')
+    MapData.setItemSearch('')
   }
 
   function handleIndexChange(index: number) {
@@ -77,11 +76,11 @@ function AutocompletionInput() {
   }
 
   return (
-    <div className={'input-container'} onKeyDown={handleKeyPress}>
+    <div className={'input-container'} onKeyUp={handleKeyPress}>
 
       <input
-        title={'Search Item'} type={'search'} value={input} ref={inputRef}
-        onChange={e => setInput(e.target.value)} className={'input'} onKeyDown={handleKeyPress}
+        title={'Search Item'} type={'search'} value={MapData.itemSearch} ref={inputRef}
+        onChange={e => MapData.setItemSearch(e.target.value)} className={'input'} onKeyDown={handleKeyPress}
       />
 
       {suggestions.length > 0 && (

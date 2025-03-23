@@ -1,10 +1,16 @@
 import './MapDrawer.css'
-import {Typography} from "@mui/material";
+import {IconButton, Modal, Typography} from "@mui/material";
 import MapSearch from "./MapSearch.tsx";
 import useMapData from "../../hooks/useMapData.ts";
 import {MarkerType} from "../../types/enums.ts";
 import useData from "../../hooks/useData.ts";
 import {getMarkerDataStr} from "../../services/helpers.ts";
+import {Settings} from "@mui/icons-material";
+import {discordLink} from "../../services/faq.ts";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faDiscord} from "@fortawesome/free-brands-svg-icons/faDiscord";
+import {useState} from "react";
+import SettingsPage from "./SettingsPage.tsx";
 
 
 interface Props {
@@ -16,8 +22,10 @@ function MapDrawer({width}: Props) {
   const MapData = useMapData()
   const {data} = useData()
 
+  const [showSettingsModal, toggleSettingsModal] = useState(false)
+
   return (
-    <div className={"body"} style={{minWidth: width}}>
+    <div className={"body"} style={{minWidth: width, maxWidth: width}}>
 
       <Typography variant={'h5'} component={'h1'} fontWeight={800}>Interactive Map</Typography>
 
@@ -37,6 +45,20 @@ function MapDrawer({width}: Props) {
         ))}
       </div>
 
+      <div className={"map-drawer-extra-buttons"}>
+        <IconButton onClick={() => toggleSettingsModal(true)}>
+          <Settings/>
+        </IconButton>
+        <IconButton onClick={() => window.open(discordLink, "_blank")}>
+          <FontAwesomeIcon icon={faDiscord}/>
+        </IconButton>
+      </div>
+
+      <Modal open={showSettingsModal} onClose={() => toggleSettingsModal(false)}>
+        <SettingsPage/>
+      </Modal>
+
+      {MapData.itemSearch && <div className={"map-drawer-disabled"}/>}
     </div>
   );
 }

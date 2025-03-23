@@ -1,15 +1,17 @@
 .tag-container {
     display: flex;
     gap: 4px;
+    flex-wrap: wrap;
+    margin-top: 6px;
 }
 
 .tag {
     cursor: pointer;
     width: fit-content;
     padding: 4px;
-    margin-top: 6px;
     border-radius: 8px;
     background-color: #333;
+    user-select: none;
 }
 
 .tag:hover {

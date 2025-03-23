@@ -8,14 +8,14 @@ function MapSearch() {
   const MapData = useMapData()
 
   return (
-    <div>
+    <div style={{zIndex: 3}}>
       <Typography variant={'h6'} component={'h2'} align={'left'}>Search Items</Typography>
 
       <AutocompletionInput/>
 
       <div className={'tag-container'}>
         {MapData.selectedItems.map(i => (
-          <div className={'tag'} onClick={() => MapData.removeItem(i)}>
+          <div key={i} className={'tag'} onClick={() => MapData.removeItem(i)}>
             {i}
           </div>
         ))}

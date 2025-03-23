@@ -3,7 +3,8 @@ import {ChoosableMarkers} from "../../types/map.ts";
 import {Typography} from "@mui/material";
 import {isShop} from "../../services/helpers.ts";
 import ShopItem from "./ShopItem.tsx";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import shopItem from "./ShopItem.tsx";
 
 
 interface Props {
@@ -13,6 +14,7 @@ interface Props {
 function MarkerDrawer({chosenMarker}: Props) {
 
   const [selectedLevel, setSelectedLevel] = useState(0)
+  const [shopItems, setShopItems] = useState<shopItem[]>([])
 
   const buttonStartStyle: React.CSSProperties = {
     borderTopLeftRadius: 8,
@@ -23,6 +25,17 @@ function MarkerDrawer({chosenMarker}: Props) {
     borderTopRightRadius: 8,
     borderBottomRightRadius: 8,
   }
+
+  useEffect(() => {
+    function getAllShopItems() {
+      if (!chosenMarker || !isShop(chosenMarker)) return
+
+      const allShopItems: ShopItem[] = [...chosenMarker.items ?? [], ...chosenMarker.furnitures ?? [], ...chosenMarker.equipments ?? []]
+      setShopItems([...allShopItems.filter(i => i.quantity[selectedLevel] > 0), ...allShopItems.filter(i => i.quantity[selectedLevel] <= 0)])
+    }
+
+    getAllShopItems()
+  }, [chosenMarker, selectedLevel]);
 
   if (!chosenMarker) return null
 
@@ -57,16 +70,10 @@ function MarkerDrawer({chosenMarker}: Props) {
         </>}
       </div>
 
-      {isShop(chosenMarker) && <div className={"marker-drawer-items"}>
-        {chosenMarker.items?.map((i, index) =>
+      <div className={"marker-drawer-items"}>
+        {isShop(chosenMarker) && shopItems.map((i, index) =>
           <ShopItem key={i.name + index} item={i} level={selectedLevel} shop={chosenMarker}/>)}
-
-        {chosenMarker.equipments?.map((i, index) =>
-          <ShopItem key={i.name + index} item={i} level={selectedLevel} shop={chosenMarker}/>)}
-
-        {chosenMarker.furnitures?.map((i, index) =>
-          <ShopItem key={i.name + index} item={i} level={selectedLevel} shop={chosenMarker}/>)}
-      </div>}
+      </div>
     </div>
   );
 }
