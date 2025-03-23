@@ -3141,5 +3141,28 @@ export const shops: Shop[] = [
         "unit": Unit.MASS,
       },
     ],
+  },
+  {
+    "name": "Cocaine lab",
+    "area": Area.NO_MANS_LAND,
+    "check-possible": false,
+    "location": {x: 0.631014, y: 0.46898},
+    "discounts": [0.0, 0.05, 0.1, 0.15],
+    "items": [
+      {
+        "name": Item.COCAINE,
+        "price": 24000,
+        "quantity": [3, 5, 6],
+        "amount": 10,
+        "unit": Unit.MASS,
+      },
+      {
+        "name": Item.COCAINE,
+        "price": 120000,
+        "quantity": [0, 1, 1],
+        "amount": 50,
+        "unit": Unit.MASS,
+      },
+    ],
   }
 ]

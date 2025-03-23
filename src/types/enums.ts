@@ -98,7 +98,7 @@ export enum Item {
     EMPTY_LABELED_MEDICAL_BOX = "Empty labeled medical box",
     DOG_TAG = "Dog tag",
     OPIUM = "Opium",
-    COCS = "Cocaine",
+    COCAINE = "Cocaine",
     BLANK_BLOTTER = "Blank blotter",
     FESTIVE_SPICE_PACK = "Festive spice pack",
     SHROOMS = "Shrooms",
@@ -108,6 +108,7 @@ export enum Item {
     ERGOTAMINE = "Ergotamine",
     PSILOCYBIN_MUSHROOMS_DIRTY = "Psilocybin mushrooms (dirty)",
     LSD = "Lsd",
+    
 
     // Consumables
     LIMONADA_DE_COCO = "Limonada de Coco",
