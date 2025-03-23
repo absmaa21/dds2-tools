@@ -134,6 +134,7 @@ export enum Item {
     LED_BULB_LARGE = "Led bulb large",
     DISARMING_CARD = "Disarming card",
     COMBAT_RATION = "Combat ration",
+    ERGOTAMINE = "Ergotamine",
 
     // Consumables
     LIMONADA_DE_COCO = "Limonada de Coco",
