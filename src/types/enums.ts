@@ -24,6 +24,7 @@ export enum Area {
     DUENO_DEL_MAR = 'Dueño del Mar',
     BAHIA_DOWNTOWN = 'Bahía de Oro - Downtown district',
     BAHIA_FAVELA = 'Bahía de Oro - Favela district',
+    NO_MANS_LAND = "No Man's Land",
 }
 
 export enum Item {

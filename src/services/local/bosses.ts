@@ -95,6 +95,7 @@ export const bosses: Boss[] = [
     "name": "Kira",
     "area": Area.SLAVS_BAY,
     "location": {x: 0.417992, y: 0.539531},
+    "xp-level": [-1, 900, -1, 3800],
     "demands": [
       {
         "name": Item.WEED_INDICA,
