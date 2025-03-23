@@ -1741,177 +1741,6 @@ export const shops: Shop[] = [
     ]
   },
   {
-    "name": "General store",
-    "area": Area.SLAVS_BAY,
-    "check-possible": false,
-    "location": {x: 0.327356, y: 0.619695},
-    "discounts": [0.0, 0.1],
-    "items": [
-      {
-        "name": Item.WATER_BOTTLE_SMALL,
-        "price": 300,
-        "amount": 500,
-        "unit": Unit.LIQUID,
-        "quantity": [10],
-      },
-      {
-        "name": Item.WATER_BOTTLE_MEDIUM,
-        "price": 2300,
-        "amount": 5000,
-        "unit": Unit.LIQUID,
-        "quantity": [1],
-      },
-      {
-        "name": Item.CIGARETTE_PACK,
-        "price": 3750,
-        "quantity": [6],
-      },
-      {
-        "name": Item.TABACCO_PACK,
-        "price": 4500,
-        "amount": 50,
-        "unit": Unit.MASS,
-        "quantity": [1],
-      },
-      {
-        "name": Item.CHOCOLATE_BAR,
-        "price": 300,
-        "quantity": [1],
-      },
-      {
-        "name": Item.CACAO_POWDER,
-        "price": 1250,
-        "amount": 500,
-        "unit": Unit.MASS,
-        "quantity": [2],
-      },
-      {
-        "name": Item.PACKET_SUGAR,
-        "price": 1200,
-        "amount": 1000,
-        "unit": Unit.MASS,
-        "quantity": [2],
-      },
-      {
-        "name": Item.PACKET_FLOUR,
-        "price": 550,
-        "amount": 1000,
-        "unit": Unit.MASS,
-        "quantity": [10],
-      },
-      {
-        "name": Item.PACKET_SALT,
-        "price": 450,
-        "amount": 1000,
-        "unit": Unit.MASS,
-        "quantity": [5],
-      },
-      {
-        "name": Item.PACKET_SODA,
-        "price": 700,
-        "amount": 1000,
-        "unit": Unit.MASS,
-        "quantity": [10],
-      },
-      {
-        "name": Item.FERTILIZER,
-        "price": 1750,
-        "amount": 1000,
-        "unit": Unit.MASS,
-        "quantity": [2],
-      },
-      {
-        "name": Item.ETHANOL,
-        "price": 480,
-        "amount": 200,
-        "unit": Unit.LIQUID,
-        "quantity": [10],
-      },
-      {
-        "name": Item.VINEGAR,
-        "price": 500,
-        "amount": 500000,
-        "unit": Unit.LIQUID,
-        "quantity": [10],
-      },
-      {
-        "name": Item.KEYCHAIN,
-        "price": 1500,
-        "quantity": [3],
-      },
-      {
-        "name": Item.SMALL_FLASHLIGHT,
-        "price": 3000,
-        "quantity": [2],
-      },
-      {
-        "name": Item.FLASHLIGHT,
-        "price": 4000,
-        "quantity": [1],
-      },
-      {
-        "name": Item.CROWBAR,
-        "price": 6000,
-        "quantity": [2],
-      },
-      {
-        "name": Item.GLASSES,
-        "price": 1100,
-        "quantity": [2],
-      },
-      {
-        "name": Item.BASEBALL_CAP,
-        "price": 300,
-        "quantity": [2],
-      },
-      {
-        "name": Item.BANDAGE,
-        "price": 8000,
-        "quantity": [3],
-      },
-      {
-        "name": Item.MAP,
-        "price": 2300,
-        "quantity": [2],
-      },
-      {
-        "name": Item.BUS_TICKET,
-        "price": 20,
-        "quantity": [25],
-      },
-      {
-        "name": Item.ROLLING_PAPERS,
-        "price": 10,
-        "quantity": [40],
-      },
-      {
-        "name": Item.PLASTIC_BAGGIES,
-        "price": 1,
-        "quantity": [500],
-      },
-      {
-        "name": Item.DUCT_TAPE,
-        "price": 5,
-        "quantity": [100],
-      },
-      {
-        "name": Item.STRETCH_FOIL,
-        "price": 10,
-        "quantity": [80],
-      },
-      {
-        "name": Item.PLASTIC_BAG,
-        "price": 250,
-        "quantity": [5],
-      },
-      {
-        "name": Item.CASH_LARGE,
-        "price": 1,
-        "quantity": [100000],
-      },
-    ]
-  },
-  {
     "name": "Construction store",
     "area": Area.SLAVS_BAY,
     "check-possible": false,
@@ -2187,7 +2016,7 @@ export const shops: Shop[] = [
       {
         "name": Item.CHOCOLATE_BAR,
         "price": 300,
-        "quantity": [5, 10, 15],
+        "quantity": [20, -1, -1],
       },
       {
         "name": Item.PACKET_SUGAR,
@@ -2222,7 +2051,7 @@ export const shops: Shop[] = [
         "price": 1500,
         "amount": 500,
         "unit": Unit.MASS,
-        "quantity": [8, 12, 18],
+        "quantity": [10, -1, -1],
       },
       {
         "name": Item.POPPY_SEED_PACK,
@@ -2262,7 +2091,7 @@ export const shops: Shop[] = [
       {
         "name": Item.VINEGAR,
         "price": 500,
-        "amount": 500000,
+        "amount": 500,
         "unit": Unit.LIQUID,
         "quantity": [10, 20, 30],
       },
@@ -2370,6 +2199,11 @@ export const shops: Shop[] = [
         "quantity": [5, 10, 15],
       },
       {
+        "name": Item.BLANK_BLOTTER,
+        "price": 500,
+        "quantity": [100],
+      },
+      {
         "name": Item.ROLLING_PAPERS,
         "price": 10,
         "quantity": [100, 150, 200],
@@ -2404,8 +2238,15 @@ export const shops: Shop[] = [
         "price": 1,
         "quantity": [100000, 200000, 300000],
       },
+      {
+        "name": Item.FESTIVE_SPICE_PACK,
+        "price": 550,
+        "amount": 600,
+        "unit": Unit.MASS,
+        "quantity": [25],
+      },
     ]
-  }, // Finished
+  },
   {
     "name": "Pharmacy",
     "area": Area.PENINSULAR,
@@ -2524,6 +2365,190 @@ export const shops: Shop[] = [
         "name": Item.PLASTIC_BAG,
         "price": 250,
         "quantity": [5, 5],
+      },
+    ]
+  },
+  {
+    "name": "General store",
+    "area": Area.PENINSULAR
+    ,
+    "check-possible": false,
+    "location": {x: 0.327356, y: 0.619695},
+    "discounts": [0.0, 0.1],
+    "items": [
+      {
+        "name": Item.WATER_BOTTLE_SMALL,
+        "price": 300,
+        "amount": 500,
+        "unit": Unit.LIQUID,
+        "quantity": [10],
+      },
+      {
+        "name": Item.WATER_BOTTLE_MEDIUM,
+        "price": 2300,
+        "amount": 5000,
+        "unit": Unit.LIQUID,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CIGARETTE_PACK,
+        "price": 3750,
+        "quantity": [6],
+      },
+      {
+        "name": Item.TABACCO_PACK,
+        "price": 4500,
+        "amount": 50,
+        "unit": Unit.MASS,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CHOCOLATE_BAR,
+        "price": 300,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CACAO_POWDER,
+        "price": 1250,
+        "amount": 500,
+        "unit": Unit.MASS,
+        "quantity": [2],
+      },
+      {
+        "name": Item.PACKET_SUGAR,
+        "price": 1200,
+        "amount": 1000,
+        "unit": Unit.MASS,
+        "quantity": [2],
+      },
+      {
+        "name": Item.PACKET_FLOUR,
+        "price": 550,
+        "amount": 1000,
+        "unit": Unit.MASS,
+        "quantity": [10],
+      },
+      {
+        "name": Item.PACKET_SALT,
+        "price": 450,
+        "amount": 1000,
+        "unit": Unit.MASS,
+        "quantity": [5],
+      },
+      {
+        "name": Item.PACKET_SODA,
+        "price": 700,
+        "amount": 1000,
+        "unit": Unit.MASS,
+        "quantity": [10],
+      },
+      {
+        "name": Item.FERTILIZER,
+        "price": 1750,
+        "amount": 1000,
+        "unit": Unit.MASS,
+        "quantity": [2],
+      },
+      {
+        "name": Item.ETHANOL,
+        "price": 480,
+        "amount": 200,
+        "unit": Unit.LIQUID,
+        "quantity": [10],
+      },
+      {
+        "name": Item.VINEGAR,
+        "price": 500,
+        "amount": 500000,
+        "unit": Unit.LIQUID,
+        "quantity": [10],
+      },
+      {
+        "name": Item.KEYCHAIN,
+        "price": 1500,
+        "quantity": [3],
+      },
+      {
+        "name": Item.SMALL_FLASHLIGHT,
+        "price": 3000,
+        "quantity": [2],
+      },
+      {
+        "name": Item.FLASHLIGHT,
+        "price": 4000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CROWBAR,
+        "price": 6000,
+        "quantity": [2],
+      },
+      {
+        "name": Item.GLASSES,
+        "price": 1100,
+        "quantity": [2],
+      },
+      {
+        "name": Item.BASEBALL_CAP,
+        "price": 300,
+        "quantity": [2],
+      },
+      {
+        "name": Item.BANDAGE,
+        "price": 8000,
+        "quantity": [3],
+      },
+      {
+        "name": Item.MAP,
+        "price": 2300,
+        "quantity": [2],
+      },
+      {
+        "name": Item.BUS_TICKET,
+        "price": 20,
+        "quantity": [25],
+      },
+      {
+        "name": Item.BLANK_BLOTTER,
+        "price": 500,
+        "quantity": [30],
+      },
+      {
+        "name": Item.ROLLING_PAPERS,
+        "price": 10,
+        "quantity": [40],
+      },
+      {
+        "name": Item.PLASTIC_BAGGIES,
+        "price": 1,
+        "quantity": [500],
+      },
+      {
+        "name": Item.DUCT_TAPE,
+        "price": 5,
+        "quantity": [100],
+      },
+      {
+        "name": Item.STRETCH_FOIL,
+        "price": 10,
+        "quantity": [80],
+      },
+      {
+        "name": Item.PLASTIC_BAG,
+        "price": 250,
+        "quantity": [5],
+      },
+      {
+        "name": Item.CASH_LARGE,
+        "price": 1,
+        "quantity": [100000],
+      },
+      {
+        "name": Item.FESTIVE_SPICE_PACK,
+        "price": 550,
+        "amount": 600,
+        "unit": Unit.MASS, 
+        "quantity": [10],
       },
     ]
   },
