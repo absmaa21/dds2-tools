@@ -208,4 +208,58 @@ export const pawnShops: Shop[] = [
       },
     ],
   },
-]
+  {
+    "name": "Pawn Shop",
+    "area": Area.DUENO_DEL_MAR,
+    "check-possible": false,
+    "location": {x: 0.328215, y: 0.361174},
+    "discounts": [0.0, 0.1],
+    "items": [
+      {
+        "name": Item.DOG_TAG,
+        "price": 3600,
+        "quantity": [2],
+      },
+      {
+        "name": Item.WATCH,
+        "price": 12000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.BRACELET,
+        "price": 9500,
+        "quantity": [1],
+      },
+      {
+        "name": Item.NECKLACE,
+        "price": 8400,
+        "quantity": [1],
+      },
+      {
+        "name": Item.NECKLACE,
+        "price": 8400,
+        "quantity": [1],
+      },
+      {
+        "name": Item.NECKLACE,
+        "price": 8400,
+        "quantity": [1],
+      },
+      {
+        "name": Item.GOLD_CHAIN,
+        "price": 25100,
+        "quantity": [1],
+      },
+      {
+        "name": Item.PLASTIC_BAG,
+        "price": 500,
+        "quantity": [5],
+      },
+      {
+        "name": Item.CASH_LARGE,
+        "price": 1,
+        "quantity": [100000],
+      },
+    ],
+  },
+] //

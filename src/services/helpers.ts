@@ -1,7 +1,24 @@
-import {Boss, Data, Equipment, Furniture, Hideout, Shop} from "../types/data.ts";
+import {
+    Boss,
+    Cloth,
+    Consumable,
+    Data,
+    Equipment,
+    Furniture,
+    Hideout,
+    Shop,
+    Tool,
+    Vehicle,
+    Weapon
+} from "../types/data.ts";
 import {Item, MarkerType} from "../types/enums.ts";
 import {equipments} from "./local/equipments.ts";
 import {furnitures} from "./local/furnitures.ts";
+import {clothes} from "./local/clothes.ts";
+import {consumables} from "./local/consumables.ts";
+import {tools} from "./local/tools.ts";
+import {weapons} from "./local/weapons.ts";
+import {vehicles} from "./local/vehicles.ts";
 
 
 /**
@@ -31,9 +48,14 @@ export function getMarkerDataStr(marker: MarkerType): keyof Data {
 }
 
 
-export function getStatsOfItem(item: Item): Equipment | Furniture | undefined {
+export function getStatsOfItem(item: Item): Equipment | Furniture | Cloth | Consumable | Tool | Weapon | Vehicle | undefined {
     if (equipments.has(item)) return equipments.get(item)
     else if (furnitures.has(item)) return furnitures.get(item)
+    else if (clothes.has(item)) return clothes.get(item)
+    else if (consumables.has(item)) return consumables.get(item)
+    else if (tools.has(item)) return tools.get(item)
+    else if (weapons.has(item)) return weapons.get(item)
+    else if (vehicles.has(item)) return vehicles.get(item)
 }
 
 

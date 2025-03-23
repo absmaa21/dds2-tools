@@ -137,4 +137,8 @@ export const dealerSpots: Marker[] = [
     "area": Area.DUENO_DEL_MAR,
     "location": {x: 0.360143, y: 0.372505},
   },
+
+  /*
+  0.329931, 0.364263
+   */
 ]

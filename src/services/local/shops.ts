@@ -2959,7 +2959,7 @@ export const shops: Shop[] = [
     "name": "Military Equipment Shop",
     "area": Area.DUENO_DEL_MAR,
     "check-possible": true,
-    "location": {x: 0.511544, y: 0.817107},
+    "location": {x: 0.442109, y: 0.371729},
     "discounts": [0.0, 0.05, 0.1],
     "items": [
       {
@@ -3089,6 +3089,123 @@ export const shops: Shop[] = [
       },
     ],
   },
+  {
+    "name": "Fuel Depot",
+    "area": Area.DUENO_DEL_MAR,
+    "check-possible": true,
+    "location": {x: 0.423656, y: 0.339031},
+    "discounts": [0],
+    "items": [
+      {
+        "name": Item.GASOLINE,
+        "price": 6000,
+        "quantity": [20],
+        "amount": 4000,
+        "unit": Unit.LIQUID,
+      },
+      {
+        "name": Item.GASOLINE,
+        "price": 16500,
+        "quantity": [8],
+        "amount": 11000,
+        "unit": Unit.LIQUID,
+      },
+      {
+        "name": Item.FLASHLIGHT,
+        "price": 3000,
+        "quantity": [2],
+      },
+      {
+        "name": Item.WIRE_CUTTERS,
+        "price": 4500,
+        "quantity": [2],
+      },
+      {
+        "name": Item.CROWBAR,
+        "price": 6000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.METAL_PARTS,
+        "price": 900,
+        "quantity": [50],
+      },
+      {
+        "name": Item.ELECTRIC_WIRES,
+        "price": 900,
+        "quantity": [50],
+      },
+      {
+        "name": Item.MAP,
+        "price": 2500,
+        "quantity": [2],
+      },
+    ],
+  },
+  {
+    "name": "Boat Seller",
+    "area": Area.DUENO_DEL_MAR,
+    "check-possible": true,
+    "location": {x: 0.416618, y: 0.379722},
+    "discounts": [0],
+    "items": [
+      {
+        "name": Item.GASOLINE,
+        "price": 6000,
+        "quantity": [10],
+        "amount": 4000,
+        "unit": Unit.LIQUID,
+      },
+      {
+        "name": Item.GASOLINE,
+        "price": 16500,
+        "quantity": [5],
+        "amount": 11000,
+        "unit": Unit.LIQUID,
+      },
+      {
+        "name": Item.FLASHLIGHT,
+        "price": 3000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.WIRE_CUTTERS,
+        "price": 4500,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CROWBAR,
+        "price": 6000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.METAL_PARTS,
+        "price": 900,
+        "quantity": [10],
+      },
+      {
+        "name": Item.MAP,
+        "price": 2500,
+        "quantity": [2],
+      },
+      {
+        "name": Item.LUXURY_MOTORBOAT,
+        "price": 750_000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.CABALLO_DEL_MAR,
+        "price": 4_200_000,
+        "quantity": [1],
+      },
+      {
+        "name": Item.BONG_VOYAGE,
+        "price": 12_000_000,
+        "quantity": [1],
+      },
+    ],
+  },
+  //
   // Bahia - Downtown
   // Bahia - Favela
   // No Man's Land

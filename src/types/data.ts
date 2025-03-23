@@ -121,3 +121,11 @@ export interface Consumable {
   "health"?: number,
   "removes-bleeding"?: boolean,
 }
+
+export interface Vehicle {
+  "fuel-usage": number, // per 100km
+  "tank-capacity": number,
+  "seats": number,
+  "inventory-space": number,
+  "speed"?: number,
+}

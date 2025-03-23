@@ -155,7 +155,7 @@ export const bosses: Boss[] = [
     "name": "Malik James", // every 4 ingame minute --> 0.1 xp lose
     "area": Area.SANGRIENTA,
     "location": {x: 0.586728, y: 0.409927},
-    "xp-level": [-1, 1000],
+    "xp-level": [-1, 1000, 2000],
     "unlock-description": "Let Benita's brother die",
     "demands": [
       {
@@ -165,7 +165,7 @@ export const bosses: Boss[] = [
       },
       {
         "name": Item.AMP,
-        "amount": -1,
+        "amount": 300,
         "price-per-g": 2000,
       },
       {

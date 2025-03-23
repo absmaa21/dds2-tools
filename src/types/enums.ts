@@ -228,6 +228,11 @@ export enum Item {
     HID_FLASHLIGHT = "HID flashlight",
     WRENCH = "Wrench",
     PITCHFORK = "Pitchfork",
+
+    // Vehicles
+    LUXURY_MOTORBOAT = "Lucury motorboat",
+    CABALLO_DEL_MAR = "Caballo del Mar",
+    BONG_VOYAGE = "Bong Voyage",
 }
 
 export enum Unit {
