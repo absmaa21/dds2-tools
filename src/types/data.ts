@@ -56,6 +56,7 @@ export interface Hideout extends Marker {
 export interface Boss extends Marker {
   "demands": DrugDemand[],
   "xp-level"?: number[], // index eq. level
+  "unlock-description"?: string,
 }
 
 export interface MedicPoint extends Marker {

@@ -146,4 +146,33 @@ export const bosses: Boss[] = [
       },
     ],
   },
+  {
+    "name": "Malik James", // every 4 ingame minute --> 0.1 xp lose
+    "area": Area.SANGRIENTA,
+    "location": {x: 0.586728, y: 0.409927},
+    "xp-level": [-1, 1000],
+    "unlock-description": "Kill Benita's brother",
+    "demands": [
+      {
+        "name": Item.WEED_INDICA,
+        "amount": -1,
+        "price-per-g": 1500,
+      },
+      {
+        "name": Item.AMP,
+        "amount": -1,
+        "price-per-g": 2000,
+      },
+      {
+        "name": Item.OPIUM,
+        "amount": -1,
+        "price-per-g": 2400,
+      },
+      {
+        "name": Item.SHROOMS,
+        "amount": -1,
+        "price-per-g": 2600,
+      },
+    ],
+  }
 ]
