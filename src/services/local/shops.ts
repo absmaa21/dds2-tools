@@ -1530,7 +1530,7 @@ export const shops: Shop[] = [
       {
         "name": Item.VINEGAR,
         "price": 500,
-        "amount": 500000,
+        "amount": 500,
         "unit": Unit.LIQUID,
         "quantity": [10],
       },
@@ -1605,7 +1605,7 @@ export const shops: Shop[] = [
       },
       {
         "name": Item.SMALL_FLASHLIGHT,
-        "price": 300,
+        "price": 3000,
         "quantity": [1],
       },
       {
@@ -1622,6 +1622,11 @@ export const shops: Shop[] = [
         "name": Item.BUS_TICKET,
         "price": 20,
         "quantity": [25],
+      },
+      {
+        "name": Item.BLANK_BLOTTER,
+        "price": 500,
+        "quantity": [10],
       },
       {
         "name": Item.ROLLING_PAPERS,
@@ -1652,6 +1657,13 @@ export const shops: Shop[] = [
         "name": Item.CASH_LARGE,
         "price": 1,
         "quantity": [100000],
+      },
+      {
+        "name": Item.FESTIVE_SPICE_PACK,
+        "price": 550,
+        "amount": 600,
+        "unit": Unit.MASS,
+        "quantity": [10],
       },
     ]
   },
