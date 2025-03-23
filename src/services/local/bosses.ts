@@ -151,7 +151,7 @@ export const bosses: Boss[] = [
     "area": Area.SANGRIENTA,
     "location": {x: 0.586728, y: 0.409927},
     "xp-level": [-1, 1000],
-    "unlock-description": "Kill Benita's brother",
+    "unlock-description": "Let Benita's brother die",
     "demands": [
       {
         "name": Item.WEED_INDICA,
@@ -174,5 +174,39 @@ export const bosses: Boss[] = [
         "price-per-g": 2600,
       },
     ],
-  }
+  },
+  {
+    "name": "Priest (Reverend Mateo De Víbora)", // every 3 ingame minutes --> 0.1 xp lose
+    "area": Area.DUENO_DEL_MAR,
+    "location": {x: 0.386578, y: 0.383149},
+    "xp-level": [-1, -1, 2000],
+    "unlock-description": "Let Benita's brother die",
+    "demands": [
+      {
+        "name": Item.WEED_INDICA,
+        "amount": -1,
+        "price-per-g": 1500,
+      },
+      {
+        "name": Item.AMP,
+        "amount": -1,
+        "price-per-g": 2500,
+      },
+      {
+        "name": Item.OPIUM,
+        "amount": -1,
+        "price-per-g": 2200,
+      },
+      {
+        "name": Item.COCS,
+        "amount": -1,
+        "price-per-g": 7000,
+      },
+      {
+        "name": Item.LSD,
+        "amount": -1,
+        "price-per-g": 42000,
+      },
+    ],
+  },
 ]

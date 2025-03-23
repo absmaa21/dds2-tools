@@ -122,6 +122,7 @@ export enum Item {
     COMBAT_RATION = "Combat ration",
     ERGOTAMINE = "Ergotamine",
     PSILOCYBIN_MUSHROOMS_DIRTY = "Psilocybin mushrooms (dirty)",
+    LSD = "Lsd",
 
     // Consumables
     LIMONADA_DE_COCO = "Limonada de Coco",
