@@ -208,7 +208,6 @@ export enum Item {
 
     // Tools & Weapons
     HAMMER = "Hammer",
-    FLASHLIGHT_HID = "HID Flashlight",
     KNIFE = "Knife",
     CROWBAR = "Crowbar",
     SHOVEL = "Shovel",

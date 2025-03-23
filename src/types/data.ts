@@ -86,3 +86,16 @@ export interface Equipment extends Furniture {
   "production-cost"?: number,
   "energy-usage"?: number,
 }
+
+export interface Tool {
+  power?: number,
+  range?: number,
+}
+
+export interface Weapon {
+  damage: number,
+  "bleed-chance"?: number,
+  "stun-chance"?: number,
+  sus?: number,
+  concealed?: boolean,
+}

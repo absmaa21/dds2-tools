@@ -851,7 +851,7 @@ export const shops: Shop[] = [
         "quantity": [0, 4, 5],
       },
       {
-        "name": Item.FLASHLIGHT_HID,
+        "name": Item.HID_FLASHLIGHT,
         "price": 5400,
         "quantity": [0, 1, 2],
       },
@@ -1255,7 +1255,7 @@ export const shops: Shop[] = [
         "quantity": [2],
       },
       {
-        "name": Item.FLASHLIGHT_HID,
+        "name": Item.HID_FLASHLIGHT,
         "price": 5400,
         "quantity": [1],
       },
@@ -2815,7 +2815,7 @@ export const shops: Shop[] = [
         "quantity": [3, 5, 7],
       },
       {
-        "name": Item.FLASHLIGHT_HID,
+        "name": Item.HID_FLASHLIGHT,
         "price": 6400,
         "quantity": [3, 5, 7],
       },
