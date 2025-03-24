@@ -106,5 +106,5 @@ export function isHideout(obj: object): obj is Hideout {
  * @param discount Discount in format 0.05
  */
 export function getDiscountedPrice(price: number, discount: number): number {
-    return price - (price * discount)
+    return Math.max(Math.round(price - (price * discount)), 1)
 }
