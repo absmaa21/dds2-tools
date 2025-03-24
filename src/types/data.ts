@@ -42,7 +42,7 @@ export type ShopItem = {
 
 export interface Hideout extends Marker {
   "price": number,
-  "visibility:": number,
+  "visibility": number,
   "security": number,
   "comfort": number,
   "running-water"?: boolean,

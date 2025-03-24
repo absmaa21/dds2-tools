@@ -96,7 +96,8 @@ export function isBoss(obj: object): obj is Boss {
  * @param obj
  */
 export function isHideout(obj: object): obj is Hideout {
-    return "price" in obj && "visibility" in obj && "security" in obj && "comfort" in obj
+    const keys: (keyof Hideout)[] = ['price', 'visibility', 'security', 'comfort']
+    return keys.every(k => k in obj)
 }
 
 

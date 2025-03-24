@@ -9,10 +9,10 @@ interface Props {
 function Row({children, style}: Props) {
   return (
     <div style={{
-      ...style,
       display: 'flex',
       flexDirection: 'row',
       justifyContent: 'space-between',
+      ...style,
     }}>
       {children}
     </div>
